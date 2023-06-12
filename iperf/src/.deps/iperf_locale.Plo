@@ -1,0 +1,8 @@
+iperf_locale.lo: iperf_locale.c \
+ /usr/riscv64-linux-gnu/include/stdc-predef.h iperf_config.h version.h
+
+/usr/riscv64-linux-gnu/include/stdc-predef.h:
+
+iperf_config.h:
+
+version.h:
