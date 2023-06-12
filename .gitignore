@@ -18,6 +18,7 @@ lua/src/lua
 lua/src/luac
 time-test/time-test
 UnixBench/pgms
+<<<<<<< HEAD
 netperf/doc/netperf.info
 UnixBench/pgms/
 time-test/time-test
@@ -25,3 +26,6 @@ copy-file-range-test/copy-file-range-test-*
 interrupts-test/interrupts-test-*
 k210/disk.img*
 k210/img.kfpkg
+=======
+netperf/doc/netperf.info
+>>>>>>> bed6afa (update)

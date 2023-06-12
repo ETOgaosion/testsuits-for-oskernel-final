@@ -23,7 +23,11 @@ lmbench: .PHONY
 	riscv64-linux-gnu-strip lmbench/bin/riscv64/lmbench_all
 	# riscv64-linux-gnu-strip lmbench/bin/riscv64/hello
 	cp lmbench/bin/riscv64/lmbench_all sdcard/
+<<<<<<< HEAD
 	cp lmbench/bin/riscv64/hello sdcard/
+=======
+	cp lmbench/bin/riscv64/hello sd
+>>>>>>> bed6afa (update)
 	cp scripts/lmbench/* sdcard/
 
 libctest: .PHONY
@@ -43,7 +47,11 @@ libc-bench: .PHONY
 	cp libc-bench/libc-bench sdcard/libc-bench
 
 unix-bench: .PHONY
+<<<<<<< HEAD
 	make -C UnixBench -j $(NPROC) all
+=======
+	make -C UnixBench CC="riscv64-linux-gnu-gcc" ARCH=riscv64 -j $(NPROC) all
+>>>>>>> bed6afa (update)
 	cp UnixBench/pgms/* sdcard
 	cp scripts/unixbench/*.sh sdcard
 
