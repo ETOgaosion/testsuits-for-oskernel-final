@@ -92,9 +92,12 @@ unix-bench: .PHONY
 	cp UnixBench/pgms/* sdcard
 	cp scripts/unixbench/*.sh sdcard
 
-
 sdcard: build_all
+
+test_all: .PHONY
 	cp scripts/test_all.sh sdcard/test_all.sh
+
+sdcard: build_all .PHONY
 	dd if=/dev/zero of=sdcard.img count=62768 bs=1K
 	mkfs.vfat -F 32 sdcard.img
 	mkdir -p mnt
