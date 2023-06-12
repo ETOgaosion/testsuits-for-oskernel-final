@@ -3,7 +3,11 @@ MUSL_PREFIX = riscv64-linux
 MUSL_GCC = $(MUSL_PREFIX)-gcc
 MUSL_STRIP = $(MUSL_PREFIX)-strip
 
+<<<<<<< HEAD
 build_all: busybox lua lmbench libctest iozone libc-bench netperf iperf unix-bench cyclictest time-test test_all true copy-file-range-test interrupts-test
+=======
+build_all: busybox lua lmbench libctest iozone libc-bench netperf iperf unix-bench time-test test_all
+>>>>>>> 984613c (add iperf testcode)
 
 busybox: .PHONY
 	cp busybox-config busybox/.config
@@ -67,11 +71,14 @@ iperf: .PHONY
 	cp iperf/src/iperf3 sdcard/
 	cp scripts/iperf/iperf_testcode.sh sdcard/
 
+<<<<<<< HEAD
 cyclictest: .PHONY
 	make -C rt-tests cyclictest hackbench
 	cp rt-tests/cyclictest rt-tests/hackbench sdcard/
 	cp scripts/cyclictest/cyclictest_testcode.sh sdcard/
 
+=======
+>>>>>>> 984613c (add iperf testcode)
 time-test: .PHONY
 	make CC=$(MUSL_GCC) -C time-test all
 	cp time-test/time-test sdcard

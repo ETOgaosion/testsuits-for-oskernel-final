@@ -19,6 +19,7 @@ lua/src/luac
 time-test/time-test
 UnixBench/pgms
 <<<<<<< HEAD
+<<<<<<< HEAD
 netperf/doc/netperf.info
 UnixBench/pgms/
 time-test/time-test
@@ -29,3 +30,6 @@ k210/img.kfpkg
 =======
 netperf/doc/netperf.info
 >>>>>>> bed6afa (update)
+=======
+netperf/doc/netperf.info
+>>>>>>> 984613c (add iperf testcode)
