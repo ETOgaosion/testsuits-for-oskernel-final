@@ -3,11 +3,7 @@ MUSL_PREFIX = riscv64-linux
 MUSL_GCC = $(MUSL_PREFIX)-gcc
 MUSL_STRIP = $(MUSL_PREFIX)-strip
 
-<<<<<<< HEAD
 build_all: busybox lua lmbench libctest iozone libc-bench netperf iperf unix-bench cyclictest time-test test_all true copy-file-range-test interrupts-test
-=======
-build_all: busybox lua lmbench libctest iozone libc-bench netperf iperf unix-bench time-test test_all
->>>>>>> 984613c (add iperf testcode)
 
 busybox: .PHONY
 	cp busybox-config busybox/.config
@@ -28,10 +24,14 @@ lmbench: .PHONY
 	# riscv64-linux-gnu-strip lmbench/bin/riscv64/hello
 	cp lmbench/bin/riscv64/lmbench_all sdcard/
 <<<<<<< HEAD
+<<<<<<< HEAD
 	cp lmbench/bin/riscv64/hello sdcard/
 =======
 	cp lmbench/bin/riscv64/hello sd
 >>>>>>> bed6afa (update)
+=======
+	cp lmbench/bin/riscv64/hello sdcard/
+>>>>>>> 11a8d79 (update Makefile)
 	cp scripts/lmbench/* sdcard/
 
 libctest: .PHONY
@@ -140,10 +140,13 @@ clean: .PHONY
 	make -C iperf clean
 	make -C UnixBench clean
 	make -C time-test clean
+<<<<<<< HEAD
 	make -C rt-tests clean
 	make -C copy-file-range-test clean
 	make -C interrupts-test clean
 	make -C UnixBench clean
+=======
+>>>>>>> 11a8d79 (update Makefile)
 	- rm sdcard/*
 	- rm sdcard.img
 	- rm sdcard.img.gz
