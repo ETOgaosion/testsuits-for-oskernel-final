@@ -1,5 +1,5 @@
 NPROC = 16
-MUSL_PREFIX = riscv64-linux
+MUSL_PREFIX = riscv64-linux-gnu
 MUSL_GCC = $(MUSL_PREFIX)-gcc
 MUSL_STRIP = $(MUSL_PREFIX)-strip
 
@@ -58,6 +58,7 @@ unix-bench: .PHONY
 >>>>>>> bed6afa (update)
 	cp UnixBench/pgms/* sdcard
 	cp scripts/unixbench/*.sh sdcard
+	cp scripts/unixbench/sort.src sdcard
 
 netperf: .PHONY
 	cd netperf && ./autogen.sh

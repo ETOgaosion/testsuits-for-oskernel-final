@@ -1,0 +1,6 @@
+*
+!.gitignore
+!res.txt
+!not_stdout_res.txt
+!connect.sh
+!run.sh
