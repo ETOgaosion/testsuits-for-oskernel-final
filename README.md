@@ -41,7 +41,11 @@ time-test 为测试Kernel的time函数是否准确，其结果只作为专家评
 ## 构建测试用例
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 docker run --rm -it -v $(pwd):/code --privileged --entrypoint make alphamj/os-contest:v7.7 -C /code sdcard
 =======
 docker run --rm -it -v $(pwd):/code --privileged --entrypoint make alphamj/os-contest:v7.6 -C /code sdcard
 >>>>>>> bed6afa (update)
+=======
+docker run --rm -it -v $(pwd):/code --privileged --entrypoint make alphamj/os-contest:v7.7 -C /code sdcard
+>>>>>>> ad3c4bb (update gitignore and README)

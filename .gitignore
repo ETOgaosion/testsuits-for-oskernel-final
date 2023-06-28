@@ -23,6 +23,7 @@ UnixBench/pgms
 netperf/doc/netperf.info
 UnixBench/pgms/
 time-test/time-test
+<<<<<<< HEAD
 copy-file-range-test/copy-file-range-test-*
 interrupts-test/interrupts-test-*
 k210/disk.img*
@@ -33,3 +34,8 @@ netperf/doc/netperf.info
 =======
 netperf/doc/netperf.info
 >>>>>>> 984613c (add iperf testcode)
+=======
+
+k210/disk.img*
+k210/img.kfpkg
+>>>>>>> ad3c4bb (update gitignore and README)
