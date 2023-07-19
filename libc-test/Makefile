@@ -22,9 +22,9 @@ DSO_SOS = $(DSO_SRCS:%.c=%.so)
 CFLAGS += -pipe -std=c99 -D_POSIX_C_SOURCE=200809L -Wall -Wno-unused-function -Wno-missing-braces -Wno-unused -Wno-overflow
 CFLAGS += -Wno-unknown-pragmas -fno-builtin -frounding-math
 CFLAGS += -Werror=implicit-function-declaration -Werror=implicit-int -Werror=pointer-sign -Werror=pointer-arith
-CFLAGS += -Os -s
+CFLAGS += -O0 -g
 CFLAGS += -Isrc/common/
-LDLIBS += -Os -s -lpthread -lm -lrt
+LDLIBS += -O0 -g -lpthread -lm -lrt
 
 # CFLAGS += -D_FILE_OFFSET_BITS=64
 # LDLIBS += -lcrypt -ldl -lresolv -lutil -lpthread

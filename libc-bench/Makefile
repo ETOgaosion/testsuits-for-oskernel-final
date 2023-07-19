@@ -2,7 +2,7 @@
 SRCS = $(sort $(wildcard *.c))
 OBJS = $(SRCS:.c=.o)
 
-CFLAGS = -Os
+CFLAGS = -O0 -g
 LDFLAGS = -static
 LIBS = -lpthread -lrt -lpthread
 

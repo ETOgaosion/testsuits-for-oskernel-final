@@ -72,6 +72,7 @@ CONFIG_PREFIX="./_install"
 # Debugging Options
 #
 # CONFIG_DEBUG is not set
+CONFIG_DEBUG=y
 # CONFIG_DEBUG_PESSIMIZE is not set
 # CONFIG_DEBUG_SANITIZE is not set
 # CONFIG_UNIT_TEST is not set
@@ -79,6 +80,7 @@ CONFIG_PREFIX="./_install"
 # CONFIG_WARN_SIMPLE_MSG is not set
 CONFIG_NO_DEBUG_LIB=y
 # CONFIG_DMALLOC is not set
+# CONFIG_DMALLOC=y
 # CONFIG_EFENCE is not set
 
 #

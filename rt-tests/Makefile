@@ -1,5 +1,5 @@
 VERSION = 1.0
-CC =riscv64-linux-gcc -static
+CC =riscv64-linux-gcc -static -g
 AR =riscv64-linux-ar
 
 OBJDIR = bld

@@ -2,26 +2,23 @@ NPROC = 16
 MUSL_PREFIX = riscv64-linux-gnu
 MUSL_GCC = $(MUSL_PREFIX)-gcc
 MUSL_STRIP = $(MUSL_PREFIX)-strip
+CFLAGS = -g
 
 build_all: busybox lua lmbench libctest iozone libc-bench netperf iperf unix-bench cyclictest time-test test_all true copy-file-range-test interrupts-test
 
 busybox: .PHONY
 	cp busybox-config busybox/.config
-	make -C busybox CC="$(MUSL_GCC) -static" STRIP=$(MUSL_STRIP) -j$(NPROC)
-	$(MUSL_STRIP) busybox/busybox
+	make -C busybox CC="$(MUSL_GCC) -static -g" STRIP=$(MUSL_STRIP) -j$(NPROC)
 	cp busybox/busybox sdcard/
 	cp scripts/busybox/* sdcard/
 
 lua: .PHONY
-	make -C lua CC="$(MUSL_GCC) -static" -j $(NPROC)
-	$(MUSL_STRIP) lua/src/lua
+	make -C lua CC="$(MUSL_GCC) -static -g" -j $(NPROC)
 	cp lua/src/lua sdcard/
 	cp scripts/lua/* sdcard/
 
 lmbench: .PHONY
-	make -C lmbench build CC="riscv64-linux-gnu-gcc -static" OS=riscv64 -j $(NPROC)
-	riscv64-linux-gnu-strip lmbench/bin/riscv64/lmbench_all
-	# riscv64-linux-gnu-strip lmbench/bin/riscv64/hello
+	make -C lmbench build CC="riscv64-linux-gnu-gcc -static -g" OS=riscv64 -j $(NPROC)
 	cp lmbench/bin/riscv64/lmbench_all sdcard/
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -40,14 +37,12 @@ libctest: .PHONY
 	mv sdcard/run-all.sh sdcard/libctest_testcode.sh
 
 iozone: .PHONY
-	make -C iozone linux CC="$(MUSL_GCC) -static" -j $(NPROC)
-	$(MUSL_STRIP) iozone/iozone
+	make -C iozone linux CC="$(MUSL_GCC) -static -g" -j $(NPROC)
 	cp iozone/iozone sdcard/
 	cp scripts/iozone/* sdcard/
 
 libc-bench: .PHONY
-	make -C libc-bench CC="$(MUSL_GCC) -static" -j $(NPROC)
-	$(MUSL_STRIP) libc-bench/libc-bench
+	make -C libc-bench CC="$(MUSL_GCC) -static -g" -j $(NPROC)
 	cp libc-bench/libc-bench sdcard/libc-bench
 
 unix-bench: .PHONY
@@ -62,13 +57,13 @@ unix-bench: .PHONY
 
 netperf: .PHONY
 	cd netperf && ./autogen.sh
-	cd netperf && ac_cv_func_setpgrp_void=yes ./configure --host riscv64 CC=$(MUSL_GCC) CFLAGS="-static"
+	cd netperf && ac_cv_func_setpgrp_void=yes ./configure --host riscv64 CC=$(MUSL_GCC) CFLAGS="-static -ggdb3 -O0"
 	cd netperf && make -j $(NPROC)
 	cp netperf/src/netperf netperf/src/netserver sdcard/
 	cp scripts/netperf/* sdcard/
 
 iperf: .PHONY
-	cd iperf &&	./configure --host=riscv64-linux-musl CC=$(MUSL_GCC) --enable-static-bin --without-sctp && make
+	cd iperf &&	./configure --host=riscv64-linux-musl CC="$(MUSL_GCC) -g" CFLAGS="$(CFLAGS)" --enable-static-bin --without-sctp && make
 	cp iperf/src/iperf3 sdcard/
 	cp scripts/iperf/iperf_testcode.sh sdcard/
 
@@ -81,7 +76,7 @@ cyclictest: .PHONY
 =======
 >>>>>>> 984613c (add iperf testcode)
 time-test: .PHONY
-	make CC=$(MUSL_GCC) -C time-test all
+	make CC="$(MUSL_GCC) -g" -C time-test all
 	cp time-test/time-test sdcard
 
 test_all: .PHONY
