@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # Busybox version: 1.33.1
-# Tue May 30 13:20:45 2023
+# Thu Jul 20 01:40:46 2023
 #
 CONFIG_HAVE_DOT_CONFIG=y
 
@@ -71,16 +71,14 @@ CONFIG_PREFIX="./_install"
 #
 # Debugging Options
 #
-# CONFIG_DEBUG is not set
 CONFIG_DEBUG=y
-# CONFIG_DEBUG_PESSIMIZE is not set
+# CONFIG_DEBUG_PESSIMIZE=y
 # CONFIG_DEBUG_SANITIZE is not set
 # CONFIG_UNIT_TEST is not set
 # CONFIG_WERROR is not set
 # CONFIG_WARN_SIMPLE_MSG is not set
 CONFIG_NO_DEBUG_LIB=y
 # CONFIG_DMALLOC is not set
-# CONFIG_DMALLOC=y
 # CONFIG_EFENCE is not set
 
 #
