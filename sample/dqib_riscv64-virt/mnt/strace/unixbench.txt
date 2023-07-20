@@ -1,0 +1,1519 @@
+execve("./unixbench_testcode.sh", ["./unixbench_testcode.sh"], 0xffffffeed28c40 /* 16 vars */) = 0
+brk(NULL)                               = 0xaaaaaac916e000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7262, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 7262, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98d47000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/riscv64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\363\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=172680, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffff98d45000
+mmap(NULL, 175776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffffff98d1a000
+mmap(0xffffff98d40000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0xffffff98d40000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/riscv64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\363\0\1\0\0\0hl\2\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1213544, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1257672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xffffff98be6000
+mmap(0xffffff98d08000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x122000) = 0xffffff98d08000
+mmap(0xffffff98d0d000, 49352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffff98d0d000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffff98be4000
+set_tid_address(0xffffff98be40f0)       = 16743
+set_robust_list(0xffffff98be4100, 24)   = 0
+mprotect(0xffffff98d08000, 12288, PROT_READ) = 0
+mprotect(0xffffff98d40000, 16384, PROT_READ) = 0
+mprotect(0xaaaaaac46a3000, 12288, PROT_READ) = 0
+mprotect(0xffffff98d69000, 4096, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffffff98d47000, 7262)          = 0
+openat(AT_FDCWD, "/dev/tty", O_RDWR|O_NONBLOCK) = 3
+close(3)                                = 0
+getrandom("\xee\xc3\x48\xa2\x41\x61\x77\x65", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaaaaaac916e000
+brk(0xaaaaaac918f000)                   = 0xaaaaaac918f000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=258, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 258, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98d48000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/riscv64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=27028, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 27028, PROT_READ, MAP_SHARED, 3, 0) = 0xffffff98bdd000
+close(3)                                = 0
+futex(0xffffff98d0c9bc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98d47000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 47, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bdc000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=127, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 127, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bdb000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=62, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 62, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bda000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=34, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bd9000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=48, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 48, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bd8000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=270, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 270, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bd7000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1406, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1406, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bd6000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3360, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 3360, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bd5000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=50, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 50, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98bd4000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib/locale/C.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/C.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=353616, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 353616, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffff98b7d000
+close(3)                                = 0
+getuid()                                = 0
+getgid()                                = 0
+geteuid()                               = 0
+getegid()                               = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+sysinfo({uptime=2929, loads=[127904, 84800, 72320], totalram=1001058304, freeram=871907328, sharedram=217088, bufferram=10338304, totalswap=0, freeswap=0, procs=58, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTART}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTART}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+uname({sysname="Linux", nodename="debian", ...}) = 0
+newfstatat(AT_FDCWD, "/mnt", {st_mode=S_IFDIR|0755, st_size=5632, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=5632, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/mnt", {st_mode=S_IFDIR|0755, st_size=5632, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/root", {st_mode=S_IFDIR|0700, st_size=4096, ...}, 0) = 0
+getpid()                                = 16743
+getppid()                               = 16740
+getpid()                                = 16743
+getppid()                               = 16740
+getpid()                                = 16743
+getppid()                               = 16740
+getpgid(0)                              = 284
+ioctl(2, TIOCGPGRP, [284])              = 0
+rt_sigaction(SIGCHLD, {sa_handler=0xaaaaaac461b94e, sa_mask=[], sa_flags=SA_RESTART}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=3568, rlim_max=3568}) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+openat(AT_FDCWD, "./unixbench_testcode.sh", O_RDONLY) = 3
+newfstatat(AT_FDCWD, "./unixbench_testcode.sh", {st_mode=S_IFREG|0755, st_size=4556, ...}, 0) = 0
+ioctl(3, TCGETS, 0xffffffffb2d860)      = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "#!/bin/bash\n\n#export CC=gcc\n\n./d"..., 80) = 80
+lseek(3, 0, SEEK_SET)                   = 0
+prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+fcntl(255, F_GETFD)                     = -1 EBADF (Bad file descriptor)
+dup3(3, 255, 0)                         = 255
+close(3)                                = 0
+fcntl(255, F_SETFD, FD_CLOEXEC)         = 0
+fcntl(255, F_GETFL)                     = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(255, "", {st_mode=S_IFREG|0755, st_size=4556, ...}, AT_EMPTY_PATH) = 0
+lseek(255, 0, SEEK_CUR)                 = 0
+read(255, "#!/bin/bash\n\n#export CC=gcc\n\n./d"..., 4556) = 4556
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -4376, SEEK_CUR)             = 180
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16744
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16745
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16746
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16747
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16744
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16746
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16745
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16747
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16744, si_uid=0, si_status=0, si_utime=997, si_stime=0} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./whetstone-double 10 | ./busybo"..., 4556) = 4376
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -4182, SEEK_CUR)             = 374
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16748
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16749
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16750
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16751
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16749
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16750
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16751
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16748
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16749, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./syscall 10 | ./busybox grep -o"..., 4556) = 4182
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -4030, SEEK_CUR)             = 526
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16752
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16753
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16754
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16755
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16753
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16754
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16755
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16752
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16753, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./context1 10 | ./busybox grep -"..., 4556) = 4030
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -3856, SEEK_CUR)             = 700
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16756
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16757
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16758
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16760
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16761
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16757
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16758
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16760
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16761
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16756
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16757, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./pipe 10 | ./busybox grep -o \"C"..., 4556) = 3856
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -3710, SEEK_CUR)             = 846
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16762
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16763
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16764
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16765
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16763
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16764
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16765
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16762
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16763, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./spawn 10 | ./busybox grep -o \""..., 4556) = 3710
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -3562, SEEK_CUR)             = 994
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16766
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16767
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16768
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 16771
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16766
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16767
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16768
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16771
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16766, si_uid=0, si_status=0, si_utime=13, si_stime=509} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "UB_BINDIR=./ ./execl 10 | ./busy"..., 4556) = 3562
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -3401, SEEK_CUR)             = 1155
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26341
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26342
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26343
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26344
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26342
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26343
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26344
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26341
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26342, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "\n#./fstime \n./fstime -w -t 20 -b"..., 4556) = 3401
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -3204, SEEK_CUR)             = 1352
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26345
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26346
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26347
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26348
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26346
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26347
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26348
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26345
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26346, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./fstime -r -t 20 -b 256 -m 500 "..., 4556) = 3204
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -3021, SEEK_CUR)             = 1535
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26350
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26351
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26352
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26353
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26351
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26352
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26353
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26350
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26351, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./fstime -c -t 20 -b 256 -m 500 "..., 4556) = 3021
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -2838, SEEK_CUR)             = 1718
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26354
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26355
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26356
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26357
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26355
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26356
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26357
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26354
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26355, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "\n./fstime -w -t 20 -b 1024 -m 20"..., 4556) = 2838
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -2649, SEEK_CUR)             = 1907
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26358
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26359
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26360
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26361
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26359
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26360
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26361
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26358
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26359, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./fstime -r -t 20 -b 1024 -m 200"..., 4556) = 2649
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -2463, SEEK_CUR)             = 2093
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26362
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26363
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26364
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26365
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26363
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26364
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26365
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26362
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26363, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./fstime -c -t 20 -b 1024 -m 200"..., 4556) = 2463
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -2277, SEEK_CUR)             = 2279
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26366
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26367
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26368
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26369
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26367
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26369
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26368
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26366
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26367, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "\n./fstime -w -t 20 -b 4096 -m 80"..., 4556) = 2277
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -2091, SEEK_CUR)             = 2465
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26370
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26371
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26372
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26373
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26371
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26372
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26373
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26370
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26371, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./fstime -r -t 20 -b 4096 -m 800"..., 4556) = 2091
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -1908, SEEK_CUR)             = 2648
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26374
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26375
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26376
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26377
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26375
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26376
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26377
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26374
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26375, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./fstime -c -t 20 -b 4096 -m 800"..., 4556) = 1908
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -1725, SEEK_CUR)             = 2831
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26378
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26379
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26380
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26381
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26379
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26380
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26381
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26378
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26379, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "\n\n./looper 20 ./multi.sh 1 | ./b"..., 4556) = 1725
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -1560, SEEK_CUR)             = 2996
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26382
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26383
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26384
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 26386
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26382
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26383
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26384
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 26386
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=26382, si_uid=0, si_status=0, si_utime=0, si_stime=10} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./looper 20 ./multi.sh 8 | ./bus"..., 4556) = 1560
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -1397, SEEK_CUR)             = 3159
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 27502
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 27503
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 27504
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 27506
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 27502
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 27503
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 27504
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 27506
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=27502, si_uid=0, si_status=0, si_utime=0, si_stime=2} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./looper 20 ./multi.sh 16 | ./bu"..., 4556) = 1397
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -1232, SEEK_CUR)             = 3324
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 28741
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 28742
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 28743
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 28745
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 28741
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 28742
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 28743
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 28745
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=28741, si_uid=0, si_status=0, si_utime=0, si_stime=2} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "#./looper 30 dc < ../testdir/dc."..., 4556) = 1232
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -1038, SEEK_CUR)             = 3518
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30035
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30036
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30037
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30038
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30036
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30037
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30038
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30035
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30036, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./short 10 | ./busybox grep -o \""..., 4556) = 1038
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -890, SEEK_CUR)              = 3666
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30039
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30040
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30041
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30042
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30040
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30041
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30042
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30039
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30040, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./int 10 | ./busybox grep -o \"CO"..., 4556) = 890
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -746, SEEK_CUR)              = 3810
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30043
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30044
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30045
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30046
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30044
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30045
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30046
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30043
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30044, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./long 10 | ./busybox grep -o \"C"..., 4556) = 746
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -600, SEEK_CUR)              = 3956
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30047
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30048
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30049
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30050
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30048
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30049
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30050
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30047
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30048, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./float 10 | ./busybox grep -o \""..., 4556) = 600
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -452, SEEK_CUR)              = 4104
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30051
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30052
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30053
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30054
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30052
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30053
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30054
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30051
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30052, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./double 10 | ./busybox grep -o "..., 4556) = 452
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -302, SEEK_CUR)              = 4254
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30055
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30056
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30057
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30058
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30056
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30057
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30058
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30055
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30056, si_uid=0, si_status=0, si_utime=0, si_stime=1} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./hanoi 10 | ./busybox grep -o \""..., 4556) = 302
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+lseek(255, -154, SEEK_CUR)              = 4402
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30059
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30060
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30061
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30062
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30060
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30061
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30062
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30059
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30060, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "./syscall 10 exec | ./busybox gr"..., 4556) = 154
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+fcntl(0, F_GETFD)                       = 0
+pipe2([3, 4], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30063
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+pipe2([4, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30064
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+close(5)                                = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+pipe2([3, 5], 0)                        = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30065
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(4)                                = 0
+close(5)                                = 0
+close(4)                                = -1 EBADF (Bad file descriptor)
+close(5)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_BLOCK, NULL, [CHLD], 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT TERM CHLD], [CHLD], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffff98be40f0) = 30067
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30063
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30065
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30064
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30067
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaaaac46195d6, sa_mask=[], sa_flags=0}, 8) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+close(3)                                = -1 EBADF (Bad file descriptor)
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30063, si_uid=0, si_status=0, si_utime=0, si_stime=38} ---
+wait4(-1, 0xffffffffb2cfd0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+read(255, "", 4556)                     = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

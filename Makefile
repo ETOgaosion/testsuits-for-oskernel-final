@@ -113,13 +113,8 @@ sdcard: build_all .PHONY
 	mkfs.vfat -F 32 sdcard.img
 	mkdir -p mnt
 	mount -t vfat -o user,umask=000,utf8=1 --source sdcard.img --target mnt
-	cp -r sdcard/* mnt
-	umount mnt
-	dd if=/dev/zero of=disk.img count=12K bs=1K
-	mkfs.vfat -F 32 disk.img
-	mkdir -p mnt
-	mount -t vfat -o user,umask=000,utf8=1 --source disk.img --target mnt
-	cp -r sdcard/* mnt
+	cp sdcard/* mnt
+	mkdir mnt/strace
 	umount mnt
 
 qemu: .PHONY

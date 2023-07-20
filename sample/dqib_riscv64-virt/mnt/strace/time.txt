@@ -1,0 +1,12 @@
+execve("./time-test", ["./time-test"], 0xfffffff79eec50 /* 16 vars */) = 0
+brk(NULL)                               = 0x79ca000
+brk(0x79caf80)                          = 0x79caf80
+uname({sysname="Linux", nodename="debian", ...}) = 0
+readlinkat(AT_FDCWD, "/proc/self/exe", "/mnt/time-test", 4096) = 14
+brk(0x79ebf80)                          = 0x79ebf80
+brk(0x79ec000)                          = 0x79ec000
+mprotect(0x6e000, 4096, PROT_READ)      = 0
+fstat(1, {st_mode=S_IFREG|0755, st_size=14, ...}) = 0
+write(1, "time-test: time/iteration: 0.300"..., 53) = 53
+exit_group(0)                           = ?
++++ exited with 0 +++

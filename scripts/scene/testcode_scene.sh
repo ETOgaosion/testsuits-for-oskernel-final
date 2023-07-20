@@ -1,4 +1,4 @@
-
+#!/bin/bash
 busybox mkdir -p /var/tmp
 lmbench_all lmdd label="File /var/tmp/XXX write bandwidth:" of=/var/tmp/XXX move=1m fsync=1 print=3
 

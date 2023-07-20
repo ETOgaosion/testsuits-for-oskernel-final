@@ -4,3 +4,6 @@
 !not_stdout_res.txt
 !connect.sh
 !run.sh
+
+!mnt
+!mnt/**

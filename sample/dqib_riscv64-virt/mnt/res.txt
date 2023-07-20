@@ -1,0 +1,2348 @@
+run time-test
+time-test: time/iteration: 0.300ns total time: 407ms
+time-test: time/iteration: 0.297ns total time: 495ms
+run busybox_testcode.sh
+#### independent command test
+testcase busybox echo "#### independent command test" success
+testcase busybox ash -c exit success
+testcase busybox sh -c exit success
+bbb
+testcase busybox basename /aaa/bbb success
+     July 2023
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+testcase busybox cal success
+[H[Jtestcase busybox clear success
+Thu Jul 20 04:41:20 UTC 2023
+testcase busybox date success
+Filesystem           1K-blocks      Used Available Use% Mounted on
+udev                    456708         0    456708   0% /dev
+tmpfs                    97760       212     97548   0% /run
+/dev/vda1             10218644   1550020   8127960  16% /
+tmpfs                   488796         0    488796   0% /dev/shm
+tmpfs                     5120         0      5120   0% /run/lock
+/dev/vdb                 61786     15891     45895  26% /mnt
+testcase busybox df success
+/aaa
+testcase busybox dirname /aaa/bbb success
+[    0.000000] Linux version 6.1.0-7-riscv64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP Debian 6.1.20-1 (2023-03-19)
+[    0.000000] OF: fdt: Ignoring memory range 0x80000000 - 0x80200000
+[    0.000000] Machine model: riscv-virtio,qemu
+[    0.000000] efi: UEFI not found.
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0xbfff26c0-0xbfff3fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000] On node 0, zone DMA32: 512 pages in unavailable ranges
+[    0.000000] SBI specification v1.0 detected
+[    0.000000] SBI implementation ID=0x1 Version=0x10001
+[    0.000000] SBI TIME extension detected
+[    0.000000] SBI IPI extension detected
+[    0.000000] SBI RFENCE extension detected
+[    0.000000] SBI SRST extension detected
+[    0.000000] SBI HSM extension detected
+[    0.000000] riscv: base ISA extensions acdfhim
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: cpu 0 has no node -1 or node-local memory
+[    0.000000] percpu: Embedded 27 pages/cpu s73320 r8192 d29080 u110592
+[    0.000000] pcpu-alloc: s73320 r8192 d29080 u110592 alloc=27*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 257544
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: root=LABEL=rootfs rw noquiet root=LABEL=rootfs
+[    0.000000] Unknown kernel command line parameters "noquiet", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] Memory: 177900K/1046528K available (7808K kernel code, 5132K rwdata, 4096K rodata, 2467K init, 496K bss, 133108K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] ftrace: allocating 29939 entries in 117 pages
+[    0.000000] ftrace: allocated 117 pages with 5 groups
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=1.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 64 local interrupts mapped
+[    0.000000] plic: plic@c000000: mapped 53 interrupts with 1 handlers for 2 contexts.
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] riscv-timer: riscv_timer_init_dt: Registering clocksource cpuid [0] hartid [0]
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000068] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.003941] Console: colour dummy device 80x25
+[    0.007656] printk: console [tty0] enabled
+[    0.009115] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.00 BogoMIPS (lpj=40000)
+[    0.009331] pid_max: default: 32768 minimum: 301
+[    0.010270] LSM: Security Framework initializing
+[    0.011120] landlock: Up and running.
+[    0.011156] Yama: disabled by default; enable with sysctl kernel.yama.*
+[    0.013378] AppArmor: AppArmor initialized
+[    0.013445] TOMOYO Linux initialized
+[    0.013944] LSM support for eBPF active
+[    0.015886] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.015939] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.047773] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.047931] cblist_init_generic: Setting shift to 0 and lim to 1.
+[    0.048169] cblist_init_generic: Setting shift to 0 and lim to 1.
+[    0.048809] ASID allocator using 16 bits (65536 entries)
+[    0.049502] rcu: Hierarchical SRCU implementation.
+[    0.049545] rcu: 	Max phase no-delay instances is 1000.
+[    0.052987] EFI services will not be available.
+[    0.055344] smp: Bringing up secondary CPUs ...
+[    0.055458] smp: Brought up 1 node, 1 CPU
+[    0.070956] node 0 deferred pages initialised in 12ms
+[    0.082423] devtmpfs: initialized
+[    0.089975] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.090150] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.092315] pinctrl core: initialized pinctrl subsystem
+[    0.097714] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.100650] DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+[    0.100813] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.101030] audit: initializing netlink subsys (disabled)
+[    0.105438] thermal_sys: Registered thermal governor 'fair_share'
+[    0.105503] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.105535] thermal_sys: Registered thermal governor 'step_wise'
+[    0.105548] thermal_sys: Registered thermal governor 'user_space'
+[    0.109097] audit: type=2000 audit(0.092:1): state=initialized audit_enabled=0 res=1
+[    0.133793] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.133851] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.143342] iommu: Default domain type: Translated 
+[    0.143417] iommu: DMA domain TLB invalidation policy: strict mode 
+[    0.151279] NetLabel: Initializing
+[    0.151334] NetLabel:  domain hash size = 128
+[    0.151353] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.151995] NetLabel:  unlabeled traffic allowed by default
+[    0.154487] vgaarb: loaded
+[    0.155569] clocksource: Switched to clocksource riscv_clocksource
+[    0.200718] VFS: Disk quotas dquot_6.6.0
+[    0.200906] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.207663] AppArmor: AppArmor Filesystem Enabled
+[    0.220006] NET: Registered PF_INET protocol family
+[    0.222126] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.228743] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.228874] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.228954] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.229591] TCP bind hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    0.229764] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.230963] MPTCP token hash table entries: 1024 (order: 2, 24576 bytes, linear)
+[    0.231215] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.231485] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.232831] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.233163] NET: Registered PF_XDP protocol family
+[    0.233326] PCI: CLS 0 bytes, default 64
+[    0.236932] Trying to unpack rootfs image as initramfs...
+[    0.241962] Initialise system trusted keyrings
+[    0.243295] Key type blacklist registered
+[    0.248061] workingset: timestamp_bits=44 max_order=18 bucket_order=0
+[    0.263769] zbud: loaded
+[    0.266956] integrity: Platform Keyring initialized
+[    0.267185] integrity: Machine keyring initialized
+[    0.267220] Key type asymmetric registered
+[    0.267280] Asymmetric key parser 'x509' registered
+[    2.448071] Freeing initrd memory: 61712K
+[    2.599020] alg: self-tests for CTR-KDF (hmac(sha256)) passed
+[    2.599574] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    2.600206] io scheduler mq-deadline registered
+[    2.608933] pci-host-generic 30000000.pci: host bridge /soc/pci@30000000 ranges:
+[    2.609677] pci-host-generic 30000000.pci:       IO 0x0003000000..0x000300ffff -> 0x0000000000
+[    2.610032] pci-host-generic 30000000.pci:      MEM 0x0040000000..0x007fffffff -> 0x0040000000
+[    2.610083] pci-host-generic 30000000.pci:      MEM 0x0400000000..0x07ffffffff -> 0x0400000000
+[    2.610452] pci-host-generic 30000000.pci: Memory resource size exceeds max for 32 bits
+[    2.611182] pci-host-generic 30000000.pci: ECAM at [mem 0x30000000-0x3fffffff] for [bus 00-ff]
+[    2.612341] pci-host-generic 30000000.pci: PCI host bridge to bus 0000:00
+[    2.612538] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    2.612604] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    2.612642] pci_bus 0000:00: root bus resource [mem 0x40000000-0x7fffffff]
+[    2.612657] pci_bus 0000:00: root bus resource [mem 0x400000000-0x7ffffffff]
+[    2.613615] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    2.619794] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    2.628519] 10000000.uart: ttyS0 at MMIO 0x10000000 (irq = 1, base_baud = 230400) is a 16550A
+[    2.662689] printk: console [ttyS0] enabled
+[    2.666774] mousedev: PS/2 mouse device common for all mice
+[    2.673871] goldfish_rtc 101000.rtc: registered as rtc0
+[    2.675181] goldfish_rtc 101000.rtc: setting system clock to 2023-07-20T04:40:18 UTC (1689828018)
+[    2.678650] syscon-poweroff soc:poweroff: pm_power_off already claimed for sbi_srst_power_off
+[    2.679339] syscon-poweroff: probe of soc:poweroff failed with error -16
+[    2.680562] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.681289] riscv-pmu-sbi: SBI PMU extension is available
+[    2.681773] riscv-pmu-sbi: 16 firmware and 2 hardware counters
+[    2.682020] riscv-pmu-sbi: Perf sampling/filtering is not supported as sscof extension is not available
+[    2.684296] NET: Registered PF_INET6 protocol family
+[    2.810322] Segment Routing with IPv6
+[    2.810734] In-situ OAM (IOAM) with IPv6
+[    2.811153] mip6: Mobile IPv6
+[    2.811787] NET: Registered PF_PACKET protocol family
+[    2.812300] mpls_gso: MPLS GSO support
+[    2.813744] registered taskstats version 1
+[    2.814068] Loading compiled-in X.509 certificates
+[    2.971457] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[    2.972445] Loaded X.509 cert 'Debian Secure Boot Signer 2022 - linux: 14011249c2675ea8e5148542202005810584b25f'
+[    2.978373] zswap: loaded using pool lzo/zbud
+[    2.980592] Key type .fscrypt registered
+[    2.980776] Key type fscrypt-provisioning registered
+[    3.088406] Key type encrypted registered
+[    3.088634] AppArmor: AppArmor sha1 policy hashing enabled
+[    3.089161] ima: No TPM chip found, activating TPM-bypass!
+[    3.089543] ima: Allocated hash algorithm: sha256
+[    3.094533] ima: No architecture policies found
+[    3.096380] evm: Initialising EVM extended attributes:
+[    3.096558] evm: security.selinux
+[    3.096841] evm: security.SMACK64 (disabled)
+[    3.096941] evm: security.SMACK64EXEC (disabled)
+[    3.097239] evm: security.SMACK64TRANSMUTE (disabled)
+[    3.097305] evm: security.SMACK64MMAP (disabled)
+[    3.097601] evm: security.apparmor
+[    3.097706] evm: security.ima
+[    3.097772] evm: security.capability
+[    3.098207] evm: HMAC attrs: 0x1
+[    3.310085] Freeing unused kernel image (initmem) memory: 2464K
+[    3.316106] Run /init as init process
+[    3.316307]   with arguments:
+[    3.316338]     /init
+[    3.316351]     noquiet
+[    3.316361]   with environment:
+[    3.316375]     HOME=/
+[    3.316386]     TERM=linux
+[    5.357969] virtio_blk virtio0: 1/0/0 default/read/poll queues
+[    5.386880] virtio_blk virtio0: [vda] 20971520 512-byte logical blocks (10.7 GB/10.0 GiB)
+[    5.480663]  vda: vda1
+[    5.505467] virtio_blk virtio3: 1/0/0 default/read/poll queues
+[    5.506468] virtio_blk virtio3: [vdb] 125536 512-byte logical blocks (64.3 MB/61.3 MiB)
+[    5.526040]  vdb:
+[    6.502100] EXT4-fs (vda1): recovery complete
+[    6.504178] EXT4-fs (vda1): mounted filesystem with ordered data mode. Quota mode: none.
+[    7.217199] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[    7.565265] systemd[1]: Inserted module 'autofs4'
+[    7.701368] systemd[1]: systemd 252.6-1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    7.702939] systemd[1]: Detected architecture riscv64.
+[    7.715813] systemd[1]: Hostname set to <debian>.
+[   10.045900] systemd[1]: Queued start job for default target graphical.target.
+[   10.102163] systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+[   10.115792] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[   10.126729] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[   10.133003] systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[   10.136947] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[   10.145174] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[   10.148448] systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+[   10.151425] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[   10.155297] systemd[1]: Reached target paths.target - Path Units.
+[   10.158739] systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[   10.161139] systemd[1]: Reached target slices.target - Slice Units.
+[   10.163792] systemd[1]: Reached target swap.target - Swaps.
+[   10.165426] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[   10.173254] systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[   10.177115] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[   10.183115] systemd[1]: Listening on systemd-journald-audit.socket - Journal Audit Socket.
+[   10.190502] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[   10.196656] systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+[   10.202818] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[   10.208836] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[   10.210937] systemd[1]: Reached target sockets.target - Socket Units.
+[   10.250985] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[   10.313168] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[   10.389420] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[   10.485096] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[   10.586454] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[   10.678377] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+[   10.770474] systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+[   10.862310] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[   10.967170] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+[   11.098284] systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+[   11.110339] systemd[1]: systemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/).
+[   11.193870] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[   11.194432] device-mapper: uevent: version 1.0.3
+[   11.204171] device-mapper: ioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[   11.254763] systemd[1]: Starting systemd-journald.service - Journal Service...
+[   11.385740] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[   11.432847] fuse: init (API version 7.37)
+[   11.494422] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[   11.521754] loop: module loaded
+[   11.594723] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[   11.860303] systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+[   11.888548] systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[   11.910353] systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+[   11.934842] systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+[   12.008179] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[   12.103744] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[   12.134234] systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+[   12.232078] systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+[   12.264500] systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+[   12.296558] EXT4-fs (vda1): re-mounted. Quota mode: none.
+[   12.340222] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[   12.354710] systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+[   12.452984] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[   12.473052] systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+[   12.529788] systemd[1]: modprobe@loop.service: Deactivated successfully.
+[   12.553875] systemd[1]: Finished modprobe@loop.service - Load Kernel Module loop.
+[   12.596393] systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[   12.628125] systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+[   12.741243] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[   12.816954] systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+[   12.822229] systemd[1]: systemd-firstboot.service - First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+[   12.841854] systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+[   12.939294] systemd[1]: Starting systemd-random-seed.service - Load/Save Random Seed...
+[   12.974934] systemd[1]: systemd-repart.service - Repartition Root Disk was skipped because no trigger condition checks were met.
+[   13.114960] systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[   13.258721] systemd[1]: Starting systemd-sysusers.service - Create System Users...
+[   13.607245] systemd[1]: Started systemd-journald.service - Journal Service.
+[   14.602493] systemd-journald[162]: Received client request to flush runtime journal.
+[   14.621665] systemd-journald[162]: File /var/log/journal/43e0ed311e3b4bbba9e248c7a6fda894/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   16.656285] random: crng init done
+testcase busybox dmesg success
+16	./strace
+15911	.
+testcase busybox du success
+2
+testcase busybox expr 1 + 1 success
+testcase busybox false success
+testcase busybox true success
+/usr/bin/ls
+testcase busybox which ls success
+Linux
+testcase busybox uname success
+ 04:41:21 up 1 min,  1 users,  load average: 0.76, 0.28, 0.10
+testcase busybox uptime success
+abcntestcase busybox printf "abcn" success
+PID   USER     TIME  COMMAND
+    1 root      0:04 {systemd} /sbin/init noquiet
+    2 root      0:00 [kthreadd]
+    3 root      0:00 [rcu_gp]
+    4 root      0:00 [rcu_par_gp]
+    5 root      0:00 [slub_flushwq]
+    6 root      0:00 [netns]
+    7 root      0:00 [kworker/0:0-eve]
+    8 root      0:00 [kworker/0:0H-ev]
+    9 root      0:02 [kworker/u2:0-ex]
+   10 root      0:00 [mm_percpu_wq]
+   11 root      0:00 [rcu_tasks_rude_]
+   12 root      0:00 [rcu_tasks_trace]
+   13 root      0:00 [ksoftirqd/0]
+   14 root      0:00 [rcu_sched]
+   15 root      0:00 [migration/0]
+   16 root      0:00 [kworker/0:1-eve]
+   17 root      0:00 [cpuhp/0]
+   19 root      0:00 [kdevtmpfs]
+   20 root      0:00 [inet_frag_wq]
+   21 root      0:00 [kauditd]
+   22 root      0:00 [khungtaskd]
+   23 root      0:00 [kworker/u2:1-ev]
+   24 root      0:00 [oom_reaper]
+   25 root      0:00 [writeback]
+   26 root      0:00 [kcompactd0]
+   27 root      0:00 [ksmd]
+   28 root      0:00 [khugepaged]
+   29 root      0:00 [kintegrityd]
+   30 root      0:00 [kblockd]
+   31 root      0:00 [blkcg_punt_bio]
+   32 root      0:00 [tpm_dev_wq]
+   33 root      0:00 [devfreq_wq]
+   34 root      0:00 [kworker/0:1H-kb]
+   35 root      0:00 [kswapd0]
+   36 root      0:00 [kworker/u2:2-ev]
+   38 root      0:00 [kworker/u2:3-ev]
+   43 root      0:00 [kthrotld]
+   45 root      0:00 [mld]
+   46 root      0:00 [ipv6_addrconf]
+   51 root      0:00 [kstrp]
+   56 root      0:00 [zswap-shrink]
+   57 root      0:00 [kworker/u3:0]
+  106 root      0:00 [kworker/0:2-eve]
+  125 root      0:00 [jbd2/vda1-8]
+  126 root      0:00 [ext4-rsv-conver]
+  162 root      0:01 /lib/systemd/systemd-journald
+  179 root      0:01 /lib/systemd/systemd-udevd
+  208 root      0:00 /usr/sbin/cron -f
+  214 root      0:00 [hwrng]
+  249 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  250 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  251 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  252 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  253 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  254 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  255 root      0:00 /bin/login -p --
+  256 root      0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+  261 root      0:00 [kworker/u2:4]
+  273 root      0:00 -bash
+  284 root      0:00 {test_all.sh} /bin/bash ./test_all.sh
+  299 root      0:00 strace -o strace/busybox.txt ./busybox_testcode.sh
+  302 root      0:00 {busybox_testcod} /bin/bash ./busybox_testcode.sh
+  304 root      0:00 {busybox_testcod} /bin/bash ./busybox_testcode.sh
+  320 root      0:00 (udev-worker)
+  326 root      0:00 ./busybox ps
+testcase busybox ps success
+/mnt
+testcase busybox pwd success
+              total        used        free      shared  buff/cache   available
+Mem:         977596       61736      856884         212       58976      852476
+Swap:             0           0           0
+testcase busybox free success
+Thu Jul 20 04:41:21 2023  0.000000 seconds
+testcase busybox hwclock success
+testcase busybox kill 10 success
+arithoh
+busybox
+busybox_cmd.txt
+busybox_testcode.sh
+context1
+cyclictest
+cyclictest_testcode.sh
+date.lua
+dhry2
+dhry2reg
+dlopen_dso.so
+double
+entry-dynamic.exe
+entry-static.exe
+execl
+file_io.lua
+float
+fstime
+hackbench
+hanoi
+hello
+int
+iozone
+iozone_testcode.sh
+iperf3
+iperf_testcode.sh
+libc-bench
+libc.so
+libctest_testcode.sh
+lmbench_all
+lmbench_testcode.sh
+long
+looper
+lua
+lua_testcode.sh
+max_min.lua
+multi.sh
+netperf
+netperf_testcode.sh
+netserver
+pipe
+random.lua
+register
+remove.lua
+res.txt
+round_num.lua
+run-dynamic.sh
+run-static.sh
+runtest.exe
+short
+sin30.lua
+sort.lua
+sort.src
+spawn
+strace
+strings.lua
+syscall
+test.sh
+test_all.sh
+time-test
+tls_align_dso.so
+tls_get_new-dtv_dso.so
+tls_init_dso.so
+tst.sh
+unixbench_testcode.sh
+whetstone-double
+testcase busybox ls success
+testcase busybox sleep 1 success
+#### file opration test
+testcase busybox echo "#### file opration test" success
+testcase busybox touch test.txt success
+testcase busybox echo "hello world" > test.txt success
+hello world
+testcase busybox cat test.txt success
+l
+testcase busybox cut -c 3 test.txt success
+0000000 062550 066154 020157 067567 066162 005144
+0000014
+testcase busybox od test.txt success
+hello world
+testcase busybox head test.txt success
+hello world
+testcase busybox tail test.txt success
+00000000  68 65 6c 6c 6f 20 77 6f  72 6c 64 0a              |hello world.|
+0000000c
+testcase busybox hexdump -C test.txt success
+6f5902ac237024bdd0c176cb93063dc4  test.txt
+testcase busybox md5sum test.txt success
+testcase busybox echo "ccccccc" >> test.txt success
+testcase busybox echo "bbbbbbb" >> test.txt success
+testcase busybox echo "aaaaaaa" >> test.txt success
+testcase busybox echo "2222222" >> test.txt success
+testcase busybox echo "1111111" >> test.txt success
+testcase busybox echo "bbbbbbb" >> test.txt success
+1111111
+2222222
+aaaaaaa
+bbbbbbb
+ccccccc
+hello world
+testcase busybox sort test.txt | ./busybox uniq success
+  File: test.txt
+  Size: 60        	Blocks: 1          IO Block: 512    regular file
+Device: fe10h/65040d	Inode: 256         Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2023-07-20 00:00:00.000000000 +0000
+Modify: 2023-07-20 04:41:22.000000000 +0000
+Change: 2023-07-20 04:41:22.000000000 +0000
+testcase busybox stat test.txt success
+hello world
+ccccccc
+bbbbbbb
+aaaaaaa
+2222222
+1111111
+bbbbbbb
+testcase busybox strings test.txt success
+        7         8        60 test.txt
+testcase busybox wc test.txt success
+testcase busybox [ -f test.txt ] success
+hello world
+ccccccc
+bbbbbbb
+aaaaaaa
+2222222
+1111111
+bbbbbbb
+testcase busybox more test.txt success
+testcase busybox rm test.txt success
+testcase busybox mkdir test_dir success
+testcase busybox mv test_dir test success
+testcase busybox rmdir test success
+echo "hello world" > test.txt
+grep hello busybox_cmd.txt
+testcase busybox grep hello busybox_cmd.txt success
+testcase busybox cp busybox_cmd.txt busybox_cmd.bak success
+testcase busybox rm busybox_cmd.bak success
+./busybox_cmd.txt
+testcase busybox find -name "busybox_cmd.txt" success
+#### independent command test
+testcase busybox echo "#### independent command test" success
+testcase busybox ash -c exit success
+testcase busybox sh -c exit success
+bbb
+testcase busybox basename /aaa/bbb success
+     July 2023
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+testcase busybox cal success
+[H[Jtestcase busybox clear success
+Thu Jul 20 04:41:23 UTC 2023
+testcase busybox date success
+Filesystem           1K-blocks      Used Available Use% Mounted on
+udev                    456708         0    456708   0% /dev
+tmpfs                    97760       212     97548   0% /run
+/dev/vda1             10218644   1550020   8127960  16% /
+tmpfs                   488796         0    488796   0% /dev/shm
+tmpfs                     5120         0      5120   0% /run/lock
+/dev/vdb                 61786     15919     45868  26% /mnt
+testcase busybox df success
+/aaa
+testcase busybox dirname /aaa/bbb success
+[    0.000000] Linux version 6.1.0-7-riscv64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP Debian 6.1.20-1 (2023-03-19)
+[    0.000000] OF: fdt: Ignoring memory range 0x80000000 - 0x80200000
+[    0.000000] Machine model: riscv-virtio,qemu
+[    0.000000] efi: UEFI not found.
+[    0.000000] NUMA: No NUMA configuration found
+[    0.000000] NUMA: Faking a node at [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0xbfff26c0-0xbfff3fff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080200000-0x00000000bfffffff]
+[    0.000000] On node 0, zone DMA32: 512 pages in unavailable ranges
+[    0.000000] SBI specification v1.0 detected
+[    0.000000] SBI implementation ID=0x1 Version=0x10001
+[    0.000000] SBI TIME extension detected
+[    0.000000] SBI IPI extension detected
+[    0.000000] SBI RFENCE extension detected
+[    0.000000] SBI SRST extension detected
+[    0.000000] SBI HSM extension detected
+[    0.000000] riscv: base ISA extensions acdfhim
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: cpu 0 has no node -1 or node-local memory
+[    0.000000] percpu: Embedded 27 pages/cpu s73320 r8192 d29080 u110592
+[    0.000000] pcpu-alloc: s73320 r8192 d29080 u110592 alloc=27*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 257544
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: root=LABEL=rootfs rw noquiet root=LABEL=rootfs
+[    0.000000] Unknown kernel command line parameters "noquiet", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] Memory: 177900K/1046528K available (7808K kernel code, 5132K rwdata, 4096K rodata, 2467K init, 496K bss, 133108K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] ftrace: allocating 29939 entries in 117 pages
+[    0.000000] ftrace: allocated 117 pages with 5 groups
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=1.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 64 local interrupts mapped
+[    0.000000] plic: plic@c000000: mapped 53 interrupts with 1 handlers for 2 contexts.
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] riscv-timer: riscv_timer_init_dt: Registering clocksource cpuid [0] hartid [0]
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000068] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.003941] Console: colour dummy device 80x25
+[    0.007656] printk: console [tty0] enabled
+[    0.009115] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.00 BogoMIPS (lpj=40000)
+[    0.009331] pid_max: default: 32768 minimum: 301
+[    0.010270] LSM: Security Framework initializing
+[    0.011120] landlock: Up and running.
+[    0.011156] Yama: disabled by default; enable with sysctl kernel.yama.*
+[    0.013378] AppArmor: AppArmor initialized
+[    0.013445] TOMOYO Linux initialized
+[    0.013944] LSM support for eBPF active
+[    0.015886] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.015939] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.047773] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.047931] cblist_init_generic: Setting shift to 0 and lim to 1.
+[    0.048169] cblist_init_generic: Setting shift to 0 and lim to 1.
+[    0.048809] ASID allocator using 16 bits (65536 entries)
+[    0.049502] rcu: Hierarchical SRCU implementation.
+[    0.049545] rcu: 	Max phase no-delay instances is 1000.
+[    0.052987] EFI services will not be available.
+[    0.055344] smp: Bringing up secondary CPUs ...
+[    0.055458] smp: Brought up 1 node, 1 CPU
+[    0.070956] node 0 deferred pages initialised in 12ms
+[    0.082423] devtmpfs: initialized
+[    0.089975] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.090150] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.092315] pinctrl core: initialized pinctrl subsystem
+[    0.097714] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.100650] DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+[    0.100813] DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.101030] audit: initializing netlink subsys (disabled)
+[    0.105438] thermal_sys: Registered thermal governor 'fair_share'
+[    0.105503] thermal_sys: Registered thermal governor 'bang_bang'
+[    0.105535] thermal_sys: Registered thermal governor 'step_wise'
+[    0.105548] thermal_sys: Registered thermal governor 'user_space'
+[    0.109097] audit: type=2000 audit(0.092:1): state=initialized audit_enabled=0 res=1
+[    0.133793] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.133851] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.143342] iommu: Default domain type: Translated 
+[    0.143417] iommu: DMA domain TLB invalidation policy: strict mode 
+[    0.151279] NetLabel: Initializing
+[    0.151334] NetLabel:  domain hash size = 128
+[    0.151353] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.151995] NetLabel:  unlabeled traffic allowed by default
+[    0.154487] vgaarb: loaded
+[    0.155569] clocksource: Switched to clocksource riscv_clocksource
+[    0.200718] VFS: Disk quotas dquot_6.6.0
+[    0.200906] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.207663] AppArmor: AppArmor Filesystem Enabled
+[    0.220006] NET: Registered PF_INET protocol family
+[    0.222126] IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.228743] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+[    0.228874] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.228954] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.229591] TCP bind hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    0.229764] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.230963] MPTCP token hash table entries: 1024 (order: 2, 24576 bytes, linear)
+[    0.231215] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.231485] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+[    0.232831] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.233163] NET: Registered PF_XDP protocol family
+[    0.233326] PCI: CLS 0 bytes, default 64
+[    0.236932] Trying to unpack rootfs image as initramfs...
+[    0.241962] Initialise system trusted keyrings
+[    0.243295] Key type blacklist registered
+[    0.248061] workingset: timestamp_bits=44 max_order=18 bucket_order=0
+[    0.263769] zbud: loaded
+[    0.266956] integrity: Platform Keyring initialized
+[    0.267185] integrity: Machine keyring initialized
+[    0.267220] Key type asymmetric registered
+[    0.267280] Asymmetric key parser 'x509' registered
+[    2.448071] Freeing initrd memory: 61712K
+[    2.599020] alg: self-tests for CTR-KDF (hmac(sha256)) passed
+[    2.599574] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+[    2.600206] io scheduler mq-deadline registered
+[    2.608933] pci-host-generic 30000000.pci: host bridge /soc/pci@30000000 ranges:
+[    2.609677] pci-host-generic 30000000.pci:       IO 0x0003000000..0x000300ffff -> 0x0000000000
+[    2.610032] pci-host-generic 30000000.pci:      MEM 0x0040000000..0x007fffffff -> 0x0040000000
+[    2.610083] pci-host-generic 30000000.pci:      MEM 0x0400000000..0x07ffffffff -> 0x0400000000
+[    2.610452] pci-host-generic 30000000.pci: Memory resource size exceeds max for 32 bits
+[    2.611182] pci-host-generic 30000000.pci: ECAM at [mem 0x30000000-0x3fffffff] for [bus 00-ff]
+[    2.612341] pci-host-generic 30000000.pci: PCI host bridge to bus 0000:00
+[    2.612538] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    2.612604] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    2.612642] pci_bus 0000:00: root bus resource [mem 0x40000000-0x7fffffff]
+[    2.612657] pci_bus 0000:00: root bus resource [mem 0x400000000-0x7ffffffff]
+[    2.613615] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    2.619794] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    2.628519] 10000000.uart: ttyS0 at MMIO 0x10000000 (irq = 1, base_baud = 230400) is a 16550A
+[    2.662689] printk: console [ttyS0] enabled
+[    2.666774] mousedev: PS/2 mouse device common for all mice
+[    2.673871] goldfish_rtc 101000.rtc: registered as rtc0
+[    2.675181] goldfish_rtc 101000.rtc: setting system clock to 2023-07-20T04:40:18 UTC (1689828018)
+[    2.678650] syscon-poweroff soc:poweroff: pm_power_off already claimed for sbi_srst_power_off
+[    2.679339] syscon-poweroff: probe of soc:poweroff failed with error -16
+[    2.680562] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.681289] riscv-pmu-sbi: SBI PMU extension is available
+[    2.681773] riscv-pmu-sbi: 16 firmware and 2 hardware counters
+[    2.682020] riscv-pmu-sbi: Perf sampling/filtering is not supported as sscof extension is not available
+[    2.684296] NET: Registered PF_INET6 protocol family
+[    2.810322] Segment Routing with IPv6
+[    2.810734] In-situ OAM (IOAM) with IPv6
+[    2.811153] mip6: Mobile IPv6
+[    2.811787] NET: Registered PF_PACKET protocol family
+[    2.812300] mpls_gso: MPLS GSO support
+[    2.813744] registered taskstats version 1
+[    2.814068] Loading compiled-in X.509 certificates
+[    2.971457] Loaded X.509 cert 'Debian Secure Boot CA: 6ccece7e4c6c0d1f6149f3dd27dfcc5cbb419ea1'
+[    2.972445] Loaded X.509 cert 'Debian Secure Boot Signer 2022 - linux: 14011249c2675ea8e5148542202005810584b25f'
+[    2.978373] zswap: loaded using pool lzo/zbud
+[    2.980592] Key type .fscrypt registered
+[    2.980776] Key type fscrypt-provisioning registered
+[    3.088406] Key type encrypted registered
+[    3.088634] AppArmor: AppArmor sha1 policy hashing enabled
+[    3.089161] ima: No TPM chip found, activating TPM-bypass!
+[    3.089543] ima: Allocated hash algorithm: sha256
+[    3.094533] ima: No architecture policies found
+[    3.096380] evm: Initialising EVM extended attributes:
+[    3.096558] evm: security.selinux
+[    3.096841] evm: security.SMACK64 (disabled)
+[    3.096941] evm: security.SMACK64EXEC (disabled)
+[    3.097239] evm: security.SMACK64TRANSMUTE (disabled)
+[    3.097305] evm: security.SMACK64MMAP (disabled)
+[    3.097601] evm: security.apparmor
+[    3.097706] evm: security.ima
+[    3.097772] evm: security.capability
+[    3.098207] evm: HMAC attrs: 0x1
+[    3.310085] Freeing unused kernel image (initmem) memory: 2464K
+[    3.316106] Run /init as init process
+[    3.316307]   with arguments:
+[    3.316338]     /init
+[    3.316351]     noquiet
+[    3.316361]   with environment:
+[    3.316375]     HOME=/
+[    3.316386]     TERM=linux
+[    5.357969] virtio_blk virtio0: 1/0/0 default/read/poll queues
+[    5.386880] virtio_blk virtio0: [vda] 20971520 512-byte logical blocks (10.7 GB/10.0 GiB)
+[    5.480663]  vda: vda1
+[    5.505467] virtio_blk virtio3: 1/0/0 default/read/poll queues
+[    5.506468] virtio_blk virtio3: [vdb] 125536 512-byte logical blocks (64.3 MB/61.3 MiB)
+[    5.526040]  vdb:
+[    6.502100] EXT4-fs (vda1): recovery complete
+[    6.504178] EXT4-fs (vda1): mounted filesystem with ordered data mode. Quota mode: none.
+[    7.217199] Not activating Mandatory Access Control as /sbin/tomoyo-init does not exist.
+[    7.565265] systemd[1]: Inserted module 'autofs4'
+[    7.701368] systemd[1]: systemd 252.6-1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    7.702939] systemd[1]: Detected architecture riscv64.
+[    7.715813] systemd[1]: Hostname set to <debian>.
+[   10.045900] systemd[1]: Queued start job for default target graphical.target.
+[   10.102163] systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+[   10.115792] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[   10.126729] systemd[1]: Created slice system-serial\x2dgetty.slice - Slice /system/serial-getty.
+[   10.133003] systemd[1]: Started systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch.
+[   10.136947] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[   10.145174] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[   10.148448] systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+[   10.151425] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[   10.155297] systemd[1]: Reached target paths.target - Path Units.
+[   10.158739] systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[   10.161139] systemd[1]: Reached target slices.target - Slice Units.
+[   10.163792] systemd[1]: Reached target swap.target - Swaps.
+[   10.165426] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[   10.173254] systemd[1]: Listening on systemd-fsckd.socket - fsck to fsckd communication Socket.
+[   10.177115] systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+[   10.183115] systemd[1]: Listening on systemd-journald-audit.socket - Journal Audit Socket.
+[   10.190502] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[   10.196656] systemd[1]: Listening on systemd-journald.socket - Journal Socket.
+[   10.202818] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[   10.208836] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[   10.210937] systemd[1]: Reached target sockets.target - Socket Units.
+[   10.250985] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[   10.313168] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[   10.389420] systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[   10.485096] systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[   10.586454] systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[   10.678377] systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+[   10.770474] systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+[   10.862310] systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[   10.967170] systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+[   11.098284] systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+[   11.110339] systemd[1]: systemd-fsck-root.service - File System Check on Root Device was skipped because of an unmet condition check (ConditionPathIsReadWrite=!/).
+[   11.193870] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[   11.194432] device-mapper: uevent: version 1.0.3
+[   11.204171] device-mapper: ioctl: 4.47.0-ioctl (2022-07-28) initialised: dm-devel@redhat.com
+[   11.254763] systemd[1]: Starting systemd-journald.service - Journal Service...
+[   11.385740] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[   11.432847] fuse: init (API version 7.37)
+[   11.494422] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[   11.521754] loop: module loaded
+[   11.594723] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[   11.860303] systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+[   11.888548] systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[   11.910353] systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+[   11.934842] systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+[   12.008179] systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[   12.103744] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[   12.134234] systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+[   12.232078] systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+[   12.264500] systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+[   12.296558] EXT4-fs (vda1): re-mounted. Quota mode: none.
+[   12.340222] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[   12.354710] systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+[   12.452984] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[   12.473052] systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+[   12.529788] systemd[1]: modprobe@loop.service: Deactivated successfully.
+[   12.553875] systemd[1]: Finished modprobe@loop.service - Load Kernel Module loop.
+[   12.596393] systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[   12.628125] systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+[   12.741243] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[   12.816954] systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+[   12.822229] systemd[1]: systemd-firstboot.service - First Boot Wizard was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+[   12.841854] systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+[   12.939294] systemd[1]: Starting systemd-random-seed.service - Load/Save Random Seed...
+[   12.974934] systemd[1]: systemd-repart.service - Repartition Root Disk was skipped because no trigger condition checks were met.
+[   13.114960] systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[   13.258721] systemd[1]: Starting systemd-sysusers.service - Create System Users...
+[   13.607245] systemd[1]: Started systemd-journald.service - Journal Service.
+[   14.602493] systemd-journald[162]: Received client request to flush runtime journal.
+[   14.621665] systemd-journald[162]: File /var/log/journal/43e0ed311e3b4bbba9e248c7a6fda894/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   16.656285] random: crng init done
+testcase busybox dmesg success
+17	./strace
+15939	.
+testcase busybox du success
+2
+testcase busybox expr 1 + 1 success
+testcase busybox false success
+testcase busybox true success
+/usr/bin/ls
+testcase busybox which ls success
+Linux
+testcase busybox uname success
+ 04:41:23 up 1 min,  1 users,  load average: 0.76, 0.28, 0.10
+testcase busybox uptime success
+abcntestcase busybox printf "abcn" success
+PID   USER     TIME  COMMAND
+    1 root      0:04 {systemd} /sbin/init noquiet
+    2 root      0:00 [kthreadd]
+    3 root      0:00 [rcu_gp]
+    4 root      0:00 [rcu_par_gp]
+    5 root      0:00 [slub_flushwq]
+    6 root      0:00 [netns]
+    7 root      0:00 [kworker/0:0-eve]
+    8 root      0:00 [kworker/0:0H-ev]
+    9 root      0:02 [kworker/u2:0-ex]
+   10 root      0:00 [mm_percpu_wq]
+   11 root      0:00 [rcu_tasks_rude_]
+   12 root      0:00 [rcu_tasks_trace]
+   13 root      0:00 [ksoftirqd/0]
+   14 root      0:00 [rcu_sched]
+   15 root      0:00 [migration/0]
+   16 root      0:00 [kworker/0:1-eve]
+   17 root      0:00 [cpuhp/0]
+   19 root      0:00 [kdevtmpfs]
+   20 root      0:00 [inet_frag_wq]
+   21 root      0:00 [kauditd]
+   22 root      0:00 [khungtaskd]
+   23 root      0:00 [kworker/u2:1-ev]
+   24 root      0:00 [oom_reaper]
+   25 root      0:00 [writeback]
+   26 root      0:00 [kcompactd0]
+   27 root      0:00 [ksmd]
+   28 root      0:00 [khugepaged]
+   29 root      0:00 [kintegrityd]
+   30 root      0:00 [kblockd]
+   31 root      0:00 [blkcg_punt_bio]
+   32 root      0:00 [tpm_dev_wq]
+   33 root      0:00 [devfreq_wq]
+   34 root      0:00 [kworker/0:1H-kb]
+   35 root      0:00 [kswapd0]
+   36 root      0:00 [kworker/u2:2-ev]
+   38 root      0:00 [kworker/u2:3-ev]
+   43 root      0:00 [kthrotld]
+   45 root      0:00 [mld]
+   46 root      0:00 [ipv6_addrconf]
+   51 root      0:00 [kstrp]
+   56 root      0:00 [zswap-shrink]
+   57 root      0:00 [kworker/u3:0]
+  106 root      0:00 [kworker/0:2-eve]
+  125 root      0:00 [jbd2/vda1-8]
+  126 root      0:00 [ext4-rsv-conver]
+  162 root      0:01 /lib/systemd/systemd-journald
+  179 root      0:01 /lib/systemd/systemd-udevd
+  208 root      0:00 /usr/sbin/cron -f
+  214 root      0:00 [hwrng]
+  249 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  250 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  251 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  252 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  253 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  254 root      0:00 /sbin/agetty -o -p -- \u --noclear - linux
+  255 root      0:00 /bin/login -p --
+  256 root      0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+  261 root      0:00 [kworker/u2:4]
+  273 root      0:00 -bash
+  284 root      0:00 {test_all.sh} /bin/bash ./test_all.sh
+  320 root      0:00 (udev-worker)
+  364 root      0:00 strace -c -o strace/busybox-list.txt ./busybox_testcode.sh
+  367 root      0:00 {busybox_testcod} /bin/bash ./busybox_testcode.sh
+  369 root      0:00 {busybox_testcod} /bin/bash ./busybox_testcode.sh
+  388 root      0:00 ./busybox ps
+testcase busybox ps success
+/mnt
+testcase busybox pwd success
+              total        used        free      shared  buff/cache   available
+Mem:         977596       61836      856632         212       59128      852300
+Swap:             0           0           0
+testcase busybox free success
+Thu Jul 20 04:41:23 2023  0.000000 seconds
+testcase busybox hwclock success
+testcase busybox kill 10 success
+arithoh
+busybox
+busybox_cmd.txt
+busybox_testcode.sh
+context1
+cyclictest
+cyclictest_testcode.sh
+date.lua
+dhry2
+dhry2reg
+dlopen_dso.so
+double
+entry-dynamic.exe
+entry-static.exe
+execl
+file_io.lua
+float
+fstime
+hackbench
+hanoi
+hello
+int
+iozone
+iozone_testcode.sh
+iperf3
+iperf_testcode.sh
+libc-bench
+libc.so
+libctest_testcode.sh
+lmbench_all
+lmbench_testcode.sh
+long
+looper
+lua
+lua_testcode.sh
+max_min.lua
+multi.sh
+netperf
+netperf_testcode.sh
+netserver
+pipe
+random.lua
+register
+remove.lua
+res.txt
+round_num.lua
+run-dynamic.sh
+run-static.sh
+runtest.exe
+short
+sin30.lua
+sort.lua
+sort.src
+spawn
+strace
+strings.lua
+syscall
+test.sh
+test_all.sh
+time-test
+tls_align_dso.so
+tls_get_new-dtv_dso.so
+tls_init_dso.so
+tst.sh
+unixbench_testcode.sh
+whetstone-double
+testcase busybox ls success
+testcase busybox sleep 1 success
+#### file opration test
+testcase busybox echo "#### file opration test" success
+testcase busybox touch test.txt success
+testcase busybox echo "hello world" > test.txt success
+hello world
+testcase busybox cat test.txt success
+l
+testcase busybox cut -c 3 test.txt success
+0000000 062550 066154 020157 067567 066162 005144
+0000014
+testcase busybox od test.txt success
+hello world
+testcase busybox head test.txt success
+hello world
+testcase busybox tail test.txt success
+00000000  68 65 6c 6c 6f 20 77 6f  72 6c 64 0a              |hello world.|
+0000000c
+testcase busybox hexdump -C test.txt success
+6f5902ac237024bdd0c176cb93063dc4  test.txt
+testcase busybox md5sum test.txt success
+testcase busybox echo "ccccccc" >> test.txt success
+testcase busybox echo "bbbbbbb" >> test.txt success
+testcase busybox echo "aaaaaaa" >> test.txt success
+testcase busybox echo "2222222" >> test.txt success
+testcase busybox echo "1111111" >> test.txt success
+testcase busybox echo "bbbbbbb" >> test.txt success
+1111111
+2222222
+aaaaaaa
+bbbbbbb
+ccccccc
+hello world
+testcase busybox sort test.txt | ./busybox uniq success
+  File: test.txt
+  Size: 60        	Blocks: 1          IO Block: 512    regular file
+Device: fe10h/65040d	Inode: 260         Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2023-07-20 00:00:00.000000000 +0000
+Modify: 2023-07-20 04:41:24.000000000 +0000
+Change: 2023-07-20 04:41:24.000000000 +0000
+testcase busybox stat test.txt success
+hello world
+ccccccc
+bbbbbbb
+aaaaaaa
+2222222
+1111111
+bbbbbbb
+testcase busybox strings test.txt success
+        7         8        60 test.txt
+testcase busybox wc test.txt success
+testcase busybox [ -f test.txt ] success
+hello world
+ccccccc
+bbbbbbb
+aaaaaaa
+2222222
+1111111
+bbbbbbb
+testcase busybox more test.txt success
+testcase busybox rm test.txt success
+testcase busybox mkdir test_dir success
+testcase busybox mv test_dir test success
+testcase busybox rmdir test success
+echo "hello world" > test.txt
+grep hello busybox_cmd.txt
+testcase busybox grep hello busybox_cmd.txt success
+testcase busybox cp busybox_cmd.txt busybox_cmd.bak success
+testcase busybox rm busybox_cmd.bak success
+./busybox_cmd.txt
+testcase busybox find -name "busybox_cmd.txt" success
+run iozone_testcode.sh
+iozone automatic measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:41:25 2023
+
+	Auto Mode
+	Record Size 1 kB
+	File size set to 4096 kB
+	Command line used: iozone -a -r 1k -s 4m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                                    random    random      bkwd     record     stride                                        
+              kB  reclen    write    rewrite      read    reread      read     write      read    rewrite       read    fwrite  frewrite     fread   freread
+            4096       1     10884     19402     34883     33338     32495     19641     32526      22521      31958     20493     21272     33986     34311
+
+iozone test complete.
+iozone throughput write/read measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:41:28 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 0 -i 1 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   10677.14 kB/sec
+	Parent sees throughput for  4 initial writers 	=    7726.30 kB/sec
+	Min throughput per process 			=    2590.24 kB/sec 
+	Max throughput per process 			=    2787.83 kB/sec
+	Avg throughput per process 			=    2669.29 kB/sec
+	Min xfer 					=     958.00 kB
+
+	Children see throughput for  4 rewriters 	=   18422.38 kB/sec
+	Parent sees throughput for  4 rewriters 	=   11978.39 kB/sec
+	Min throughput per process 			=    4182.88 kB/sec 
+	Max throughput per process 			=    4959.82 kB/sec
+	Avg throughput per process 			=    4605.60 kB/sec
+	Min xfer 					=     820.00 kB
+
+	Children see throughput for  4 readers 		=   34838.75 kB/sec
+	Parent sees throughput for  4 readers 		=   31354.13 kB/sec
+	Min throughput per process 			=    8248.95 kB/sec 
+	Max throughput per process 			=    9006.00 kB/sec
+	Avg throughput per process 			=    8709.69 kB/sec
+	Min xfer 					=     887.00 kB
+
+	Children see throughput for 4 re-readers 	=   32847.08 kB/sec
+	Parent sees throughput for 4 re-readers 	=   29262.78 kB/sec
+	Min throughput per process 			=    7819.57 kB/sec 
+	Max throughput per process 			=    8589.54 kB/sec
+	Avg throughput per process 			=    8211.77 kB/sec
+	Min xfer 					=     967.00 kB
+
+
+
+iozone test complete.
+iozone throughput random-read measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:41:41 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 0 -i 2 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   10677.14 kB/sec
+	Parent sees throughput for  4 initial writers 	=    9414.46 kB/sec
+	Min throughput per process 			=    2454.64 kB/sec 
+	Max throughput per process 			=    2766.80 kB/sec
+	Avg throughput per process 			=    2669.29 kB/sec
+	Min xfer 					=     905.00 kB
+
+	Children see throughput for  4 rewriters 	=   18439.10 kB/sec
+	Parent sees throughput for  4 rewriters 	=   16081.94 kB/sec
+	Min throughput per process 			=    4373.19 kB/sec 
+	Max throughput per process 			=    4959.85 kB/sec
+	Avg throughput per process 			=    4609.77 kB/sec
+	Min xfer 					=     899.00 kB
+
+	Children see throughput for 4 random readers 	=   31121.92 kB/sec
+	Parent sees throughput for 4 random readers 	=   28353.74 kB/sec
+	Min throughput per process 			=    7604.56 kB/sec 
+	Max throughput per process 			=    7952.47 kB/sec
+	Avg throughput per process 			=    7780.48 kB/sec
+	Min xfer 					=     912.00 kB
+
+	Children see throughput for 4 random writers 	=   18169.70 kB/sec
+	Parent sees throughput for 4 random writers 	=   15454.54 kB/sec
+	Min throughput per process 			=    4218.29 kB/sec 
+	Max throughput per process 			=    4875.63 kB/sec
+	Avg throughput per process 			=    4542.42 kB/sec
+	Min xfer 					=     943.00 kB
+
+
+
+iozone test complete.
+iozone throughput read-backwards measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:41:59 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 0 -i 3 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   10772.02 kB/sec
+	Parent sees throughput for  4 initial writers 	=    9259.08 kB/sec
+	Min throughput per process 			=    2601.72 kB/sec 
+	Max throughput per process 			=    2930.11 kB/sec
+	Avg throughput per process 			=    2693.01 kB/sec
+	Min xfer 					=     905.00 kB
+
+	Children see throughput for  4 rewriters 	=   18781.77 kB/sec
+	Parent sees throughput for  4 rewriters 	=   16290.71 kB/sec
+	Min throughput per process 			=    4274.79 kB/sec 
+	Max throughput per process 			=    4978.25 kB/sec
+	Avg throughput per process 			=    4695.44 kB/sec
+	Min xfer 					=     921.00 kB
+
+	Children see throughput for 4 reverse readers 	=   31921.37 kB/sec
+	Parent sees throughput for 4 reverse readers 	=   28702.31 kB/sec
+	Min throughput per process 			=    7576.50 kB/sec 
+	Max throughput per process 			=    8400.30 kB/sec
+	Avg throughput per process 			=    7980.34 kB/sec
+	Min xfer 					=     928.00 kB
+
+
+
+iozone test complete.
+iozone throughput stride-read measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:42:12 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 0 -i 5 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   11097.64 kB/sec
+	Parent sees throughput for  4 initial writers 	=    7178.46 kB/sec
+	Min throughput per process 			=    2707.92 kB/sec 
+	Max throughput per process 			=    2884.09 kB/sec
+	Avg throughput per process 			=    2774.41 kB/sec
+	Min xfer 					=     989.00 kB
+
+	Children see throughput for  4 rewriters 	=   19171.04 kB/sec
+	Parent sees throughput for  4 rewriters 	=   12852.42 kB/sec
+	Min throughput per process 			=    4539.91 kB/sec 
+	Max throughput per process 			=    4900.35 kB/sec
+	Avg throughput per process 			=    4792.76 kB/sec
+	Min xfer 					=     912.00 kB
+
+	Children see throughput for 4 stride readers 	=   31663.87 kB/sec
+	Parent sees throughput for 4 stride readers 	=   28090.65 kB/sec
+	Min throughput per process 			=    7296.46 kB/sec 
+	Max throughput per process 			=    8200.07 kB/sec
+	Avg throughput per process 			=    7915.97 kB/sec
+	Min xfer 					=     870.00 kB
+
+
+
+iozone test complete.
+iozone throughput fwrite/fread measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:42:26 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 6 -i 7 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 fwriters 	=    9886.99 kB/sec
+	Parent sees throughput for  4 fwriters 		=    9036.70 kB/sec
+	Min throughput per process 			=    2392.04 kB/sec 
+	Max throughput per process 			=    2532.73 kB/sec
+	Avg throughput per process 			=    2471.75 kB/sec
+	Min xfer 					=    1024.00 kB
+
+	Children see throughput for  4 freaders 	=   33209.16 kB/sec
+	Parent sees throughput for  4 freaders 		=   30829.91 kB/sec
+	Min throughput per process 			=    8086.09 kB/sec 
+	Max throughput per process 			=    8859.83 kB/sec
+	Avg throughput per process 			=    8302.29 kB/sec
+	Min xfer 					=    1024.00 kB
+
+
+
+iozone test complete.
+iozone throughput pwrite/pread measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:42:34 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 9 -i 10 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for 4 pwrite writers 	=   11196.37 kB/sec
+	Parent sees throughput for 4 pwrite writers 	=    9426.95 kB/sec
+	Min throughput per process 			=    2461.23 kB/sec 
+	Max throughput per process 			=    3101.38 kB/sec
+	Avg throughput per process 			=    2799.09 kB/sec
+	Min xfer 					=     836.00 kB
+
+	Children see throughput for 4 pread readers 	=   33720.23 kB/sec
+	Parent sees throughput for 4 pread readers 	=   30101.56 kB/sec
+	Min throughput per process 			=    7923.72 kB/sec 
+	Max throughput per process 			=    8937.15 kB/sec
+	Avg throughput per process 			=    8430.06 kB/sec
+	Min xfer 					=     842.00 kB
+
+
+
+iozone test complete.
+iozone throughtput pwritev/preadv measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:42:47 2023
+
+	Selected test not available on the version.
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 11 -i 12 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   11033.24 kB/sec
+	Parent sees throughput for  4 initial writers 	=    9490.50 kB/sec
+	Min throughput per process 			=    2662.35 kB/sec 
+	Max throughput per process 			=    2969.84 kB/sec
+	Avg throughput per process 			=    2758.31 kB/sec
+	Min xfer 					=     951.00 kB
+
+	Children see throughput for  4 rewriters 	=   19615.25 kB/sec
+	Parent sees throughput for  4 rewriters 	=   16954.73 kB/sec
+	Min throughput per process 			=    4702.82 kB/sec 
+	Max throughput per process 			=    5024.36 kB/sec
+	Avg throughput per process 			=    4903.81 kB/sec
+	Min xfer 					=     974.00 kB
+
+
+
+iozone test complete.
+iozone automatic measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:42:57 2023
+
+	Auto Mode
+	Record Size 1 kB
+	File size set to 4096 kB
+	Command line used: iozone -a -r 1k -s 4m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                                    random    random      bkwd     record     stride                                        
+              kB  reclen    write    rewrite      read    reread      read     write      read    rewrite       read    fwrite  frewrite     fread   freread
+            4096       1     11667     20316     34135     33590     32461     19814     32143      22358      33212     20951     20818     34184     33650
+
+iozone test complete.
+iozone throughput write/read measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:42:59 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 0 -i 1 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   10572.38 kB/sec
+	Parent sees throughput for  4 initial writers 	=    9659.56 kB/sec
+	Min throughput per process 			=    2581.13 kB/sec 
+	Max throughput per process 			=    2708.51 kB/sec
+	Avg throughput per process 			=    2643.09 kB/sec
+	Min xfer 					=     983.00 kB
+
+	Children see throughput for  4 rewriters 	=   19105.16 kB/sec
+	Parent sees throughput for  4 rewriters 	=   16655.66 kB/sec
+	Min throughput per process 			=    4367.74 kB/sec 
+	Max throughput per process 			=    5134.73 kB/sec
+	Avg throughput per process 			=    4776.29 kB/sec
+	Min xfer 					=     948.00 kB
+
+	Children see throughput for  4 readers 		=   34993.30 kB/sec
+	Parent sees throughput for  4 readers 		=   31263.80 kB/sec
+	Min throughput per process 			=    8149.14 kB/sec 
+	Max throughput per process 			=    9643.01 kB/sec
+	Avg throughput per process 			=    8748.32 kB/sec
+	Min xfer 					=     935.00 kB
+
+	Children see throughput for 4 re-readers 	=   32360.11 kB/sec
+	Parent sees throughput for 4 re-readers 	=   29215.20 kB/sec
+	Min throughput per process 			=    7658.64 kB/sec 
+	Max throughput per process 			=    8494.55 kB/sec
+	Avg throughput per process 			=    8090.03 kB/sec
+	Min xfer 					=     929.00 kB
+
+
+
+iozone test complete.
+iozone throughput random-read measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:43:13 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 0 -i 2 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   10997.41 kB/sec
+	Parent sees throughput for  4 initial writers 	=    9662.23 kB/sec
+	Min throughput per process 			=    2656.68 kB/sec 
+	Max throughput per process 			=    2953.09 kB/sec
+	Avg throughput per process 			=    2749.35 kB/sec
+	Min xfer 					=     956.00 kB
+
+	Children see throughput for  4 rewriters 	=   19866.41 kB/sec
+	Parent sees throughput for  4 rewriters 	=   16905.64 kB/sec
+	Min throughput per process 			=    4640.05 kB/sec 
+	Max throughput per process 			=    5364.77 kB/sec
+	Avg throughput per process 			=    4966.60 kB/sec
+	Min xfer 					=     876.00 kB
+
+	Children see throughput for 4 random readers 	=   31062.88 kB/sec
+	Parent sees throughput for 4 random readers 	=   28092.17 kB/sec
+	Min throughput per process 			=    7516.20 kB/sec 
+	Max throughput per process 			=    7971.43 kB/sec
+	Avg throughput per process 			=    7765.72 kB/sec
+	Min xfer 					=     941.00 kB
+
+	Children see throughput for 4 random writers 	=   18260.65 kB/sec
+	Parent sees throughput for 4 random writers 	=   14832.82 kB/sec
+	Min throughput per process 			=    4340.41 kB/sec 
+	Max throughput per process 			=    4840.37 kB/sec
+	Avg throughput per process 			=    4565.16 kB/sec
+	Min xfer 					=     943.00 kB
+
+
+
+iozone test complete.
+iozone throughput read-backwards measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:43:30 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 0 -i 3 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   11171.31 kB/sec
+	Parent sees throughput for  4 initial writers 	=    9718.32 kB/sec
+	Min throughput per process 			=    2705.54 kB/sec 
+	Max throughput per process 			=    2886.99 kB/sec
+	Avg throughput per process 			=    2792.83 kB/sec
+	Min xfer 					=     963.00 kB
+
+	Children see throughput for  4 rewriters 	=   19873.22 kB/sec
+	Parent sees throughput for  4 rewriters 	=   16989.79 kB/sec
+	Min throughput per process 			=    4543.76 kB/sec 
+	Max throughput per process 			=    5360.16 kB/sec
+	Avg throughput per process 			=    4968.30 kB/sec
+	Min xfer 					=     904.00 kB
+
+	Children see throughput for 4 reverse readers 	=   30340.12 kB/sec
+	Parent sees throughput for 4 reverse readers 	=   27121.39 kB/sec
+	Min throughput per process 			=    7388.59 kB/sec 
+	Max throughput per process 			=    7894.66 kB/sec
+	Avg throughput per process 			=    7585.03 kB/sec
+	Min xfer 					=     907.00 kB
+
+
+
+iozone test complete.
+iozone throughput stride-read measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:43:43 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 0 -i 5 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   10564.37 kB/sec
+	Parent sees throughput for  4 initial writers 	=    9111.25 kB/sec
+	Min throughput per process 			=    2438.43 kB/sec 
+	Max throughput per process 			=    2826.18 kB/sec
+	Avg throughput per process 			=    2641.09 kB/sec
+	Min xfer 					=     879.00 kB
+
+	Children see throughput for  4 rewriters 	=   19475.63 kB/sec
+	Parent sees throughput for  4 rewriters 	=   16699.25 kB/sec
+	Min throughput per process 			=    4629.34 kB/sec 
+	Max throughput per process 			=    5249.45 kB/sec
+	Avg throughput per process 			=    4868.91 kB/sec
+	Min xfer 					=     960.00 kB
+
+	Children see throughput for 4 stride readers 	=   30553.62 kB/sec
+	Parent sees throughput for 4 stride readers 	=   27320.38 kB/sec
+	Min throughput per process 			=    7061.89 kB/sec 
+	Max throughput per process 			=    8088.35 kB/sec
+	Avg throughput per process 			=    7638.41 kB/sec
+	Min xfer 					=     893.00 kB
+
+
+
+iozone test complete.
+iozone throughput fwrite/fread measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:43:57 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 6 -i 7 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 fwriters 	=   10780.92 kB/sec
+	Parent sees throughput for  4 fwriters 		=    9800.84 kB/sec
+	Min throughput per process 			=    2570.39 kB/sec 
+	Max throughput per process 			=    2813.15 kB/sec
+	Avg throughput per process 			=    2695.23 kB/sec
+	Min xfer 					=    1024.00 kB
+
+	Children see throughput for  4 freaders 	=   34456.93 kB/sec
+	Parent sees throughput for  4 freaders 		=   31262.62 kB/sec
+	Min throughput per process 			=    8061.73 kB/sec 
+	Max throughput per process 			=    9647.19 kB/sec
+	Avg throughput per process 			=    8614.23 kB/sec
+	Min xfer 					=    1024.00 kB
+
+
+
+iozone test complete.
+iozone throughput pwrite/pread measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:44:05 2023
+
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 9 -i 10 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for 4 pwrite writers 	=   10980.86 kB/sec
+	Parent sees throughput for 4 pwrite writers 	=    9864.05 kB/sec
+	Min throughput per process 			=    2716.65 kB/sec 
+	Max throughput per process 			=    2787.96 kB/sec
+	Avg throughput per process 			=    2745.22 kB/sec
+	Min xfer 					=     992.00 kB
+
+	Children see throughput for 4 pread readers 	=   34744.31 kB/sec
+	Parent sees throughput for 4 pread readers 	=   30748.01 kB/sec
+	Min throughput per process 			=    8052.99 kB/sec 
+	Max throughput per process 			=    8930.53 kB/sec
+	Avg throughput per process 			=    8686.08 kB/sec
+	Min xfer 					=     920.00 kB
+
+
+
+iozone test complete.
+iozone throughtput pwritev/preadv measurements
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.506 $
+		Compiled for 64 bit mode.
+		Build: linux 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Thu Jul 20 04:44:18 2023
+
+	Selected test not available on the version.
+	Record Size 1 kB
+	File size set to 1024 kB
+	Command line used: iozone -t 4 -i 11 -i 12 -r 1k -s 1m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Throughput test with 4 processes
+	Each process writes a 1024 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	=   10775.97 kB/sec
+	Parent sees throughput for  4 initial writers 	=    9439.40 kB/sec
+	Min throughput per process 			=    2615.70 kB/sec 
+	Max throughput per process 			=    2764.97 kB/sec
+	Avg throughput per process 			=    2693.99 kB/sec
+	Min xfer 					=     983.00 kB
+
+	Children see throughput for  4 rewriters 	=   19666.40 kB/sec
+	Parent sees throughput for  4 rewriters 	=   17247.36 kB/sec
+	Min throughput per process 			=    4287.33 kB/sec 
+	Max throughput per process 			=    5270.45 kB/sec
+	Avg throughput per process 			=    4916.60 kB/sec
+	Min xfer 					=     880.00 kB
+
+
+
+iozone test complete.
+run libctest_testcode.sh
+run lmbench_testcode.sh
+latency measurements
+file system latency
+Bandwidth measurements
+context switch overhead
+latency measurements
+file system latency
+Bandwidth measurements
+context switch overhead
+run lua_testcode.sh
+testcase lua date.lua success
+testcase lua file_io.lua success
+testcase lua max_min.lua success
+testcase lua random.lua success
+testcase lua remove.lua success
+testcase lua round_num.lua success
+testcase lua sin30.lua success
+testcase lua sort.lua success
+testcase lua strings.lua success
+testcase lua date.lua success
+testcase lua file_io.lua success
+testcase lua max_min.lua success
+testcase lua random.lua success
+testcase lua remove.lua success
+testcase lua round_num.lua success
+testcase lua sin30.lua success
+testcase lua sort.lua success
+testcase lua strings.lua success
+run unixbench_testcode.sh
+Unixbench DHRY2 test(lps): 52934428
+Unixbench WHETSTONE test(MFLOPS): 1170.164
+Unixbench SYSCALL test(lps): 2553949
+Unixbench CONTEXT test(lps): 59259
+Unixbench PIPE test(lps): 218311
+Unixbench SPAWN test(lps): 9570
+Unixbench EXECL test(lps): 3772
+Unixbench FS_WRITE_SMALL test(KBps): 6366
+Unixbench FS_READ_SMALL test(KBps): 10700
+Unixbench FS_COPY_SMALL test(KBps): 3862
+Unixbench FS_WRITE_MIDDLE test(KBps): 25107
+Unixbench FS_READ_MIDDLE test(KBps): 41754
+Unixbench FS_COPY_MIDDLE test(KBps): 14975
+Unixbench FS_WRITE_BIG test(KBps): 89485
+Unixbench FS_READ_BIG test(KBps): 156006
+Unixbench FS_COPY_BIG test(KBps): 55117
+Unixbench SHELL1 test(lpm): 123
+Unixbench SHELL8 test(lpm): 18
+Unixbench SHELL16 test(lpm): 9
+Unixbench ARITHOH test(lps): 7737144009
+Unixbench SHORT test(lps): 204787412
+Unixbench INT test(lps): 204247805
+Unixbench LONG test(lps): 206447260
+Unixbench FLOAT test(lps): 206985640
+Unixbench DOUBLE test(lps): 207036876
+Unixbench HANOI test(lps): 698823
+Unixbench EXEC test(lps): 519
+Unixbench DHRY2 test(lps): 53166582
+Unixbench WHETSTONE test(MFLOPS): 1189.056
+Unixbench SYSCALL test(lps): 2527216
+Unixbench CONTEXT test(lps): 58471
+Unixbench PIPE test(lps): 222346
+Unixbench SPAWN test(lps): 9616
+Unixbench EXECL test(lps): 3574
+Unixbench FS_WRITE_SMALL test(KBps): 6245
+Unixbench FS_READ_SMALL test(KBps): 10474
+Unixbench FS_COPY_SMALL test(KBps): 3815
+Unixbench FS_WRITE_MIDDLE test(KBps): 24488
+Unixbench FS_READ_MIDDLE test(KBps): 41619
+Unixbench FS_COPY_MIDDLE test(KBps): 15156
+Unixbench FS_WRITE_BIG test(KBps): 87084
+Unixbench FS_READ_BIG test(KBps): 157156
+Unixbench FS_COPY_BIG test(KBps): 55594
+Unixbench SHELL1 test(lpm): 126
+Unixbench SHELL8 test(lpm): 18
+Unixbench SHELL16 test(lpm): 9
+Unixbench ARITHOH test(lps): 7721385997
+Unixbench SHORT test(lps): 206241180
+Unixbench INT test(lps): 205955122
+Unixbench LONG test(lps): 205818515
+Unixbench FLOAT test(lps): 206448416
+Unixbench DOUBLE test(lps): 206515199
+Unixbench HANOI test(lps): 684436
+Unixbench EXEC test(lps): 499
+run netperf_testcode.sh
+====== netperf UDP_STREAM begin ======
+Starting netserver with host '127.0.0.1' port '12865' and family AF_UNSPEC
+MIGRATED UDP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET
+Socket  Message  Elapsed      Messages                
+Size    Size     Time         Okay Errors   Throughput
+bytes   bytes    secs            #      #   10^6bits/sec
+
+ 32000    1000   1.00         4445      0      35.40
+ 32000           1.00         4427             35.25
+
+====== netperf UDP_STREAM end: success ======
+====== netperf TCP_STREAM begin ======
+MIGRATED TCP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET
+Recv   Send    Send                          
+Socket Socket  Message  Elapsed              
+Size   Size    Size     Time     Throughput  
+bytes  bytes   bytes    secs.    10^6bits/sec  
+
+ 32000  32000   1000    1.00       87.43   
+====== netperf TCP_STREAM end: success ======
+====== netperf UDP_RR begin ======
+MIGRATED UDP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET : first burst 0
+Local /Remote
+Socket Size   Request  Resp.   Elapsed  Trans.
+Send   Recv   Size     Size    Time     Rate         
+bytes  Bytes  bytes    bytes   secs.    per sec   
+
+32000  32000  64       64      1.00     2593.23   
+32000  32000 
+====== netperf UDP_RR end: success ======
+====== netperf TCP_RR begin ======
+MIGRATED TCP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET : first burst 0
+Local /Remote
+Socket Size   Request  Resp.   Elapsed  Trans.
+Send   Recv   Size     Size    Time     Rate         
+bytes  Bytes  bytes    bytes   secs.    per sec   
+
+32000  32000  64       64      1.00     2427.71   
+32000  32000 
+====== netperf TCP_RR end: success ======
+====== netperf TCP_CRR begin ======
+MIGRATED TCP Connect/Request/Response TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET
+Local /Remote
+Socket Size   Request  Resp.   Elapsed  Trans.
+Send   Recv   Size     Size    Time     Rate         
+bytes  Bytes  bytes    bytes   secs.    per sec   
+
+32000  32000  64       64      1.00      560.31   
+32000  32000 
+====== netperf TCP_CRR end: success ======
+====== netperf UDP_STREAM begin ======
+Starting netserver with host '127.0.0.1' port '12865' and family AF_UNSPEC
+MIGRATED UDP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET
+Socket  Message  Elapsed      Messages                
+Size    Size     Time         Okay Errors   Throughput
+bytes   bytes    secs            #      #   10^6bits/sec
+
+ 32000    1000   1.00         4432      0      35.39
+ 32000           1.00         4395             35.09
+
+====== netperf UDP_STREAM end: success ======
+====== netperf TCP_STREAM begin ======
+MIGRATED TCP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET
+Recv   Send    Send                          
+Socket Socket  Message  Elapsed              
+Size   Size    Size     Time     Throughput  
+bytes  bytes   bytes    secs.    10^6bits/sec  
+
+ 32000  32000   1000    1.00       87.80   
+====== netperf TCP_STREAM end: success ======
+====== netperf UDP_RR begin ======
+MIGRATED UDP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET : first burst 0
+Local /Remote
+Socket Size   Request  Resp.   Elapsed  Trans.
+Send   Recv   Size     Size    Time     Rate         
+bytes  Bytes  bytes    bytes   secs.    per sec   
+
+32000  32000  64       64      1.00     2584.99   
+32000  32000 
+====== netperf UDP_RR end: success ======
+====== netperf TCP_RR begin ======
+MIGRATED TCP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET : first burst 0
+Local /Remote
+Socket Size   Request  Resp.   Elapsed  Trans.
+Send   Recv   Size     Size    Time     Rate         
+bytes  Bytes  bytes    bytes   secs.    per sec   
+
+32000  32000  64       64      1.00     2268.34   
+32000  32000 
+====== netperf TCP_RR end: success ======
+====== netperf TCP_CRR begin ======
+MIGRATED TCP Connect/Request/Response TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 127.0.0.1 () port 0 AF_INET
+Local /Remote
+Socket Size   Request  Resp.   Elapsed  Trans.
+Send   Recv   Size     Size    Time     Rate         
+bytes  Bytes  bytes    bytes   secs.    per sec   
+
+32000  32000  64       64      1.00      553.15   
+32000  32000 
+====== netperf TCP_CRR end: success ======
+run iperf_testcode.sh
+====== iperf BASIC_UDP begin ======
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 44451 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-2.00   sec   154 MBytes   647 Mbits/sec  4934  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-2.00   sec   154 MBytes   647 Mbits/sec  0.000 ms  0/4934 (0%)  sender
+[  5]   0.00-2.00   sec   150 MBytes   630 Mbits/sec  0.055 ms  118/4934 (2.4%)  receiver
+
+iperf Done.
+====== iperf BASIC_UDP end: success ======
+
+====== iperf BASIC_TCP begin ======
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 35930 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-2.00   sec   274 MBytes  1.15 Gbits/sec    0   2.50 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-2.00   sec   274 MBytes  1.15 Gbits/sec    0             sender
+[  5]   0.00-2.00   sec   273 MBytes  1.14 Gbits/sec                  receiver
+
+iperf Done.
+====== iperf BASIC_TCP end: success ======
+
+====== iperf PARALLEL_UDP begin ======
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 40622 connected to 127.0.0.1 port 5001
+[  7] local 127.0.0.1 port 59185 connected to 127.0.0.1 port 5001
+[  9] local 127.0.0.1 port 47396 connected to 127.0.0.1 port 5001
+[ 11] local 127.0.0.1 port 36820 connected to 127.0.0.1 port 5001
+[ 13] local 127.0.0.1 port 37078 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  1344  
+[  7]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  1344  
+[  9]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  1344  
+[ 11]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  1344  
+[ 13]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  1344  
+[SUM]   0.00-2.00   sec   210 MBytes   881 Mbits/sec  6720  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  0.000 ms  0/1344 (0%)  sender
+[  5]   0.00-2.01   sec  40.1 MBytes   168 Mbits/sec  0.674 ms  58/1342 (4.3%)  receiver
+[  7]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  0.000 ms  0/1344 (0%)  sender
+[  7]   0.00-2.01   sec  40.2 MBytes   168 Mbits/sec  0.690 ms  55/1342 (4.1%)  receiver
+[  9]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  0.000 ms  0/1344 (0%)  sender
+[  9]   0.00-2.01   sec  40.2 MBytes   168 Mbits/sec  0.757 ms  57/1342 (4.2%)  receiver
+[ 11]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  0.000 ms  0/1344 (0%)  sender
+[ 11]   0.00-2.01   sec  39.8 MBytes   166 Mbits/sec  0.722 ms  68/1342 (5.1%)  receiver
+[ 13]   0.00-2.00   sec  42.0 MBytes   176 Mbits/sec  0.000 ms  0/1344 (0%)  sender
+[ 13]   0.00-2.01   sec  39.8 MBytes   166 Mbits/sec  0.711 ms  68/1342 (5.1%)  receiver
+[SUM]   0.00-2.00   sec   210 MBytes   881 Mbits/sec  0.000 ms  0/6720 (0%)  sender
+[SUM]   0.00-2.01   sec   200 MBytes   837 Mbits/sec  0.711 ms  306/6710 (4.6%)  receiver
+
+iperf Done.
+====== iperf PARALLEL_UDP end: success ======
+
+====== iperf PARALLEL_TCP begin ======
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 35970 connected to 127.0.0.1 port 5001
+[  7] local 127.0.0.1 port 35984 connected to 127.0.0.1 port 5001
+[  9] local 127.0.0.1 port 35996 connected to 127.0.0.1 port 5001
+[ 11] local 127.0.0.1 port 36004 connected to 127.0.0.1 port 5001
+[ 13] local 127.0.0.1 port 36006 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0   1.06 MBytes       
+[  7]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0   1.06 MBytes       
+[  9]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0   1.06 MBytes       
+[ 11]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0   1.12 MBytes       
+[ 13]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0   1.06 MBytes       
+[SUM]   0.00-2.03   sec   275 MBytes  1.14 Gbits/sec    0             
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[  5]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec                  receiver
+[  7]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[  7]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec                  receiver
+[  9]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[  9]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec                  receiver
+[ 11]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[ 11]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec                  receiver
+[ 13]   0.00-2.03   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[ 13]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec                  receiver
+[SUM]   0.00-2.03   sec   275 MBytes  1.14 Gbits/sec    0             sender
+[SUM]   0.00-2.02   sec   275 MBytes  1.14 Gbits/sec                  receiver
+
+iperf Done.
+====== iperf PARALLEL_TCP end: success ======
+
+====== iperf REVERSE_UDP begin ======
+Connecting to host 127.0.0.1, port 5001
+Reverse mode, remote host 127.0.0.1 is sending
+[  5] local 127.0.0.1 port 36121 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-2.00   sec   147 MBytes   616 Mbits/sec  0.083 ms  54/4757 (1.1%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-2.00   sec   149 MBytes   622 Mbits/sec  0.000 ms  0/4757 (0%)  sender
+[  5]   0.00-2.00   sec   147 MBytes   616 Mbits/sec  0.083 ms  54/4757 (1.1%)  receiver
+
+iperf Done.
+====== iperf REVERSE_UDP end: success ======
+
+====== iperf REVERSE_TCP begin ======
+Connecting to host 127.0.0.1, port 5001
+Reverse mode, remote host 127.0.0.1 is sending
+[  5] local 127.0.0.1 port 32814 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-2.00   sec   277 MBytes  1.16 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-2.01   sec   278 MBytes  1.16 Gbits/sec    0             sender
+[  5]   0.00-2.00   sec   277 MBytes  1.16 Gbits/sec                  receiver
+
+iperf Done.
+====== iperf REVERSE_TCP end: success ======
+
+====== iperf BASIC_UDP begin ======
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 42924 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-2.00   sec   152 MBytes   638 Mbits/sec  4870  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-2.00   sec   152 MBytes   638 Mbits/sec  0.000 ms  0/4870 (0%)  sender
+[  5]   0.00-2.00   sec   152 MBytes   636 Mbits/sec  0.054 ms  10/4870 (0.21%)  receiver
+
+iperf Done.
+====== iperf BASIC_UDP end: success ======
+
+====== iperf BASIC_TCP begin ======
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 32844 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-2.01   sec   282 MBytes  1.18 Gbits/sec    0   4.25 MBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-2.01   sec   282 MBytes  1.18 Gbits/sec    0             sender
+[  5]   0.00-2.02   sec   282 MBytes  1.17 Gbits/sec                  receiver
+
+iperf Done.
+====== iperf BASIC_TCP end: success ======
+
+====== iperf PARALLEL_UDP begin ======
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 41847 connected to 127.0.0.1 port 5001
+[  7] local 127.0.0.1 port 59900 connected to 127.0.0.1 port 5001
+[  9] local 127.0.0.1 port 35707 connected to 127.0.0.1 port 5001
+[ 11] local 127.0.0.1 port 38601 connected to 127.0.0.1 port 5001
+[ 13] local 127.0.0.1 port 36406 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  1447  
+[  7]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  1447  
+[  9]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  1447  
+[ 11]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  1447  
+[ 13]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  1447  
+[SUM]   0.00-2.00   sec   226 MBytes   948 Mbits/sec  7235  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  0.000 ms  0/1447 (0%)  sender
+[  5]   0.00-2.01   sec  42.6 MBytes   178 Mbits/sec  0.691 ms  84/1447 (5.8%)  receiver
+[  7]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  0.000 ms  0/1447 (0%)  sender
+[  7]   0.00-2.01   sec  42.7 MBytes   178 Mbits/sec  0.660 ms  82/1447 (5.7%)  receiver
+[  9]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  0.000 ms  0/1447 (0%)  sender
+[  9]   0.00-2.01   sec  42.7 MBytes   179 Mbits/sec  0.654 ms  81/1447 (5.6%)  receiver
+[ 11]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  0.000 ms  0/1447 (0%)  sender
+[ 11]   0.00-2.01   sec  42.5 MBytes   178 Mbits/sec  0.715 ms  86/1446 (5.9%)  receiver
+[ 13]   0.00-2.00   sec  45.2 MBytes   190 Mbits/sec  0.000 ms  0/1447 (0%)  sender
+[ 13]   0.00-2.01   sec  42.3 MBytes   177 Mbits/sec  0.783 ms  92/1446 (6.4%)  receiver
+[SUM]   0.00-2.00   sec   226 MBytes   948 Mbits/sec  0.000 ms  0/7235 (0%)  sender
+[SUM]   0.00-2.01   sec   213 MBytes   890 Mbits/sec  0.701 ms  425/7233 (5.9%)  receiver
+
+iperf Done.
+====== iperf PARALLEL_UDP end: success ======
+
+====== iperf PARALLEL_TCP begin ======
+Connecting to host 127.0.0.1, port 5001
+[  5] local 127.0.0.1 port 60198 connected to 127.0.0.1 port 5001
+[  7] local 127.0.0.1 port 60200 connected to 127.0.0.1 port 5001
+[  9] local 127.0.0.1 port 60206 connected to 127.0.0.1 port 5001
+[ 11] local 127.0.0.1 port 60218 connected to 127.0.0.1 port 5001
+[ 13] local 127.0.0.1 port 60228 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0   1.06 MBytes       
+[  7]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0   1.06 MBytes       
+[  9]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0   1.06 MBytes       
+[ 11]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0   1.06 MBytes       
+[ 13]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0   1023 KBytes       
+[SUM]   0.00-2.02   sec   275 MBytes  1.14 Gbits/sec    0             
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[  5]   0.00-2.03   sec  55.0 MBytes   227 Mbits/sec                  receiver
+[  7]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[  7]   0.00-2.03   sec  55.0 MBytes   227 Mbits/sec                  receiver
+[  9]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[  9]   0.00-2.03   sec  55.0 MBytes   227 Mbits/sec                  receiver
+[ 11]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[ 11]   0.00-2.03   sec  54.9 MBytes   226 Mbits/sec                  receiver
+[ 13]   0.00-2.02   sec  55.0 MBytes   228 Mbits/sec    0             sender
+[ 13]   0.00-2.03   sec  54.9 MBytes   226 Mbits/sec                  receiver
+[SUM]   0.00-2.02   sec   275 MBytes  1.14 Gbits/sec    0             sender
+[SUM]   0.00-2.03   sec   275 MBytes  1.13 Gbits/sec                  receiver
+
+iperf Done.
+====== iperf PARALLEL_TCP end: success ======
+
+====== iperf REVERSE_UDP begin ======
+Connecting to host 127.0.0.1, port 5001
+Reverse mode, remote host 127.0.0.1 is sending
+[  5] local 127.0.0.1 port 56027 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-2.00   sec   149 MBytes   626 Mbits/sec  0.040 ms  45/4823 (0.93%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-2.01   sec   151 MBytes   629 Mbits/sec  0.000 ms  0/4823 (0%)  sender
+[  5]   0.00-2.00   sec   149 MBytes   626 Mbits/sec  0.040 ms  45/4823 (0.93%)  receiver
+
+iperf Done.
+====== iperf REVERSE_UDP end: success ======
+
+====== iperf REVERSE_TCP begin ======
+Connecting to host 127.0.0.1, port 5001
+Reverse mode, remote host 127.0.0.1 is sending
+[  5] local 127.0.0.1 port 60246 connected to 127.0.0.1 port 5001
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-2.00   sec   278 MBytes  1.16 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-2.01   sec   279 MBytes  1.16 Gbits/sec    0             sender
+[  5]   0.00-2.00   sec   278 MBytes  1.16 Gbits/sec                  receiver
+
+iperf Done.
+====== iperf REVERSE_TCP end: success ======
+
+run cyclictest_testcode.sh
+====== cyclictest NO_STRESS_P1 begin ======
+T: 0 (44550) P:99 I:1000 C:    999 Min:     69 Act:  300 Avg:  254 Max:    1740
+====== cyclictest NO_STRESS_P1 end: success ======
+====== cyclictest NO_STRESS_P8 begin ======
+T: 0 (44552) P:99 I:1000 C:    992 Min:     54 Act:  337 Avg:  216 Max:    2598
+T: 1 (44553) P:99 I:1500 C:    666 Min:     51 Act:  250 Avg:  204 Max:    2445
+T: 2 (44554) P:99 I:2000 C:    499 Min:     77 Act:  125 Avg:  177 Max:    2546
+T: 3 (44555) P:99 I:2500 C:    400 Min:     61 Act:  254 Avg:  215 Max:    1547
+T: 4 (44556) P:99 I:3000 C:    334 Min:     77 Act:  127 Avg:  209 Max:    2560
+T: 5 (44557) P:99 I:3500 C:    286 Min:     70 Act:  208 Avg:  204 Max:    1469
+T: 6 (44558) P:99 I:4000 C:    250 Min:     59 Act:  166 Avg:  175 Max:    1509
+T: 7 (44559) P:99 I:4500 C:    222 Min:     77 Act:  116 Avg:  180 Max:    1338
+====== cyclictest NO_STRESS_P8 end: success ======
+====== start hackbench ======
+Running in process mode with 10 groups using 40 file descriptors each (== 400 tasks)
+Each sender will pass 100000000 messages of 100 bytes
+====== cyclictest STRESS_P1 begin ======
+T: 0 (44963) P:99 I:1000 C:    992 Min:     84 Act:  116 Avg:  202 Max:    3961
+====== cyclictest STRESS_P1 end: success ======
+====== cyclictest STRESS_P8 begin ======
+T: 0 (44965) P:99 I:1000 C:    996 Min:     90 Act:  168 Avg:  216 Max:    2276
+T: 1 (44966) P:99 I:1500 C:    563 Min:     84 Act:  449 Avg:  205 Max:    2635
+T: 2 (44967) P:99 I:2000 C:    342 Min:     91 Act:  102 Avg:  187 Max:    2109
+T: 3 (44968) P:99 I:2500 C:    234 Min:     97 Act:  324 Avg:  203 Max:    2405
+T: 4 (44969) P:99 I:3000 C:    155 Min:     97 Act:  292 Avg:  200 Max:     739
+T: 5 (44970) P:99 I:3500 C:     77 Min:     93 Act:  270 Avg:  234 Max:     984
+T: 6 (44971) P:99 I:4000 C:     33 Min:     93 Act:  319 Avg:  218 Max:     949
+T: 7 (44972) P:99 I:4500 C:      0 Min:1000000 Act:    0 Avg:    0 Max:       0
+====== cyclictest STRESS_P8 end: success ======
+signaling 400 worker threads to terminate
+Time: 17.979
+====== kill hackbench: success ======
+====== cyclictest NO_STRESS_P1 begin ======
+T: 0 (44979) P:99 I:1000 C:    998 Min:     86 Act:  131 Avg:  235 Max:    2321
+====== cyclictest NO_STRESS_P1 end: success ======
+====== cyclictest NO_STRESS_P8 begin ======
+T: 0 (44981) P:99 I:1000 C:    989 Min:     68 Act:  161 Avg:  192 Max:    3742
+T: 1 (44982) P:99 I:1500 C:    662 Min:     72 Act:  158 Avg:  195 Max:    3569
+T: 2 (44983) P:99 I:2000 C:    499 Min:     64 Act:  271 Avg:  199 Max:    3360
+T: 3 (44984) P:99 I:2500 C:    400 Min:     75 Act:  109 Avg:  187 Max:    2294
+T: 4 (44985) P:99 I:3000 C:    333 Min:     75 Act:  243 Avg:  206 Max:    3037
+T: 5 (44986) P:99 I:3500 C:    286 Min:     78 Act:  147 Avg:  205 Max:    2303
+T: 6 (44987) P:99 I:4000 C:    250 Min:     72 Act:  199 Avg:  209 Max:    3310
+T: 7 (44988) P:99 I:4500 C:    222 Min:     69 Act:  246 Avg:  210 Max:    1513
+====== cyclictest NO_STRESS_P8 end: success ======
+====== start hackbench ======
+Running in process mode with 10 groups using 40 file descriptors each (== 400 tasks)
+Each sender will pass 100000000 messages of 100 bytes
+====== cyclictest STRESS_P1 begin ======
+T: 0 (45392) P:99 I:1000 C:   1000 Min:     91 Act:  143 Avg:  193 Max:     849
+====== cyclictest STRESS_P1 end: success ======
+====== cyclictest STRESS_P8 begin ======
+T: 0 (45394) P:99 I:1000 C:    992 Min:     88 Act:  175 Avg:  205 Max:    4873
+T: 1 (45395) P:99 I:1500 C:    603 Min:     92 Act:  160 Avg:  228 Max:    4627
+T: 2 (45396) P:99 I:2000 C:    413 Min:     82 Act:  114 Avg:  214 Max:    2899
+T: 3 (45397) P:99 I:2500 C:    294 Min:     76 Act:  244 Avg:  220 Max:    4672
+T: 4 (45398) P:99 I:3000 C:    201 Min:    103 Act:  175 Avg:  219 Max:    4031
+T: 5 (45399) P:99 I:3500 C:    130 Min:     99 Act:  244 Avg:  255 Max:    2301
+T: 6 (45400) P:99 I:4000 C:      0 Min:1000000 Act:    0 Avg:    0 Max:       0
+T: 7 (45401) P:99 I:4500 C:      0 Min:1000000 Act:    0 Avg:    0 Max:       0
+====== cyclictest STRESS_P8 end: success ======
+signaling 400 worker threads to terminate
+Time: 13.351
+====== kill hackbench: success ======

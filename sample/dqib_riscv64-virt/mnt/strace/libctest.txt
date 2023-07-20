@@ -1,0 +1,2 @@
+execve("./libctest_testcode.sh", ["./libctest_testcode.sh"], 0xfffffff7fd9c40 /* 16 vars */) = -1 ENOEXEC (Exec format error)
++++ exited with 1 +++
