@@ -271,15 +271,15 @@ export quiet Q KBUILD_VERBOSE
 # Look for make include files relative to root of kernel src
 MAKEFLAGS += --include-dir=$(srctree)
 
-HOSTCC  	= gcc -g
-HOSTCXX  	= g++ -g
-HOSTCFLAGS	:=
-HOSTCXXFLAGS	:=
+HOSTCC  	= gcc
+HOSTCXX  	= g++
+HOSTCFLAGS	:= -g
+HOSTCXXFLAGS	:= -g
 # We need some generic definitions
 include $(srctree)/scripts/Kbuild.include
 
-HOSTCFLAGS	+= $(call hostcc-option,-Wall -Wstrict-prototypes -O2 -fomit-frame-pointer,)
-HOSTCXXFLAGS	+= -O2
+HOSTCFLAGS	+= $(call hostcc-option,-Wall -Wstrict-prototypes -fomit-frame-pointer,)
+# HOSTCXXFLAGS	+= -O2
 
 # For maximum performance (+ possibly random breakage, uncomment
 # the following)
@@ -291,7 +291,7 @@ MAKEFLAGS += -rR
 AS		= $(CROSS_COMPILE)as
 CC		= $(CROSS_COMPILE)gcc -g
 LD		= $(CC) -nostdlib
-CPP		= $(CC) -E
+CPP		= $(CC) -E -g
 AR		= $(CROSS_COMPILE)ar
 NM		= $(CROSS_COMPILE)nm
 STRIP		= $(CROSS_COMPILE)strip
@@ -717,6 +717,8 @@ endif # ifdef CONFIG_KALLSYMS
 busybox_unstripped: $(busybox-all) FORCE
 	$(call if_changed_rule,busybox__)
 	$(Q)rm -f .old_version
+
+SKIP_STRIP := y
 
 busybox: busybox_unstripped
 ifeq ($(SKIP_STRIP),y)
