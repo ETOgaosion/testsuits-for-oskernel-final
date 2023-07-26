@@ -113,7 +113,7 @@ sdcard: build_all .PHONY
 	mkfs.vfat -F 32 sdcard.img
 	mkdir -p mnt
 	mount -t vfat -o user,umask=000,utf8=1 --source sdcard.img --target mnt
-	cp sdcard/* mnt
+	cp -r sdcard/* mnt
 	mkdir mnt/strace
 	umount mnt
 
