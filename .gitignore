@@ -2,6 +2,7 @@
 sdcard/*
 sdcard.img
 sdcard.img.gz
+sdcard.img.bak
 oscomp-debian
 
 iozone/fileop
