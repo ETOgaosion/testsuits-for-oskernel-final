@@ -21,7 +21,7 @@ static FILE *writetemp(const char *data)
 		fclose(f);
 		return 0;
 	}
-	rewind(f);
+	fseek(f, 0, SEEK_SET);
 	return f;
 }
 
