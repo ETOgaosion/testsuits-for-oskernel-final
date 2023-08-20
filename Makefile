@@ -87,7 +87,14 @@ interrupts-test: .PHONY
 	$(MUSL_STRIP) $@/$@-*
 	cp $@/$@-* sdcard/
 
-sdcard: build_all .PHONY
+unix-bench: .PHONY
+	make -C UnixBench -j $(NPROC) all
+	cp UnixBench/pgms/* sdcard
+	cp scripts/unixbench/*.sh sdcard
+
+
+sdcard: build_all
+	cp scripts/test_all.sh sdcard/test_all.sh
 	dd if=/dev/zero of=sdcard.img count=62768 bs=1K
 	mkfs.vfat -F 32 sdcard.img
 	mkdir -p mnt
@@ -118,6 +125,7 @@ clean: .PHONY
 	make -C rt-tests clean
 	make -C copy-file-range-test clean
 	make -C interrupts-test clean
+	make -C UnixBench clean
 	- rm sdcard/*
 	- rm sdcard.img
 	- rm sdcard.img.gz
