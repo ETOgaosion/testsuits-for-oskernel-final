@@ -37,11 +37,14 @@ entry.c: entry.h
 
 entry.h: dynamic.txt static.txt
 	printf "#ifdef STATIC\n" >> entry.h
+	printf "#ifndef STATIC_ONLY\n" >> entry.h
+	printf "#define STATIC_ONLY\n" >> entry.h
 	cat static.txt | xargs -I AA basename AA .exe | sed 's/-/_/g' | xargs -I BB printf "int %s_main(int, char **);\n" BB >> entry.h
 	printf "struct {const char *name; int (*func)(int, char**);} table [] = {\n" >> entry.h
 	cat static.txt | xargs -I AA basename AA .exe | sed 's/-/_/g' | xargs -I BB printf "\t{\"%s\", %s_main},\n" BB BB >> entry.h
 	printf "\t{0, 0}\n" >> entry.h
 	printf "};\n" >> entry.h
+	printf "#endif\n" >> entry.h
 	printf "#endif\n\n" >> entry.h
 
 	printf "#ifdef DYNAMIC\n" >> entry.h

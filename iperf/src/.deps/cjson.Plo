@@ -11,8 +11,6 @@ cjson.lo: cjson.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/locale_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/__locale_t.h \
  /usr/riscv64-linux-gnu/include/strings.h \
- /usr/riscv64-linux-gnu/include/bits/strings_fortified.h \
- /usr/riscv64-linux-gnu/include/bits/string_fortified.h \
  /usr/riscv64-linux-gnu/include/stdio.h \
  /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/stdarg.h \
  /usr/riscv64-linux-gnu/include/bits/types.h \
@@ -27,8 +25,6 @@ cjson.lo: cjson.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_FILE.h \
  /usr/riscv64-linux-gnu/include/bits/stdio_lim.h \
  /usr/riscv64-linux-gnu/include/bits/sys_errlist.h \
- /usr/riscv64-linux-gnu/include/bits/stdio.h \
- /usr/riscv64-linux-gnu/include/bits/stdio2.h \
  /usr/riscv64-linux-gnu/include/math.h \
  /usr/riscv64-linux-gnu/include/bits/math-vector.h \
  /usr/riscv64-linux-gnu/include/bits/libm-simd-decl-stubs.h \
@@ -39,7 +35,6 @@ cjson.lo: cjson.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/fp-fast.h \
  /usr/riscv64-linux-gnu/include/bits/mathcalls-helper-functions.h \
  /usr/riscv64-linux-gnu/include/bits/mathcalls.h \
- /usr/riscv64-linux-gnu/include/bits/mathinline.h \
  /usr/riscv64-linux-gnu/include/stdlib.h \
  /usr/riscv64-linux-gnu/include/bits/waitflags.h \
  /usr/riscv64-linux-gnu/include/bits/waitstatus.h \
@@ -60,16 +55,13 @@ cjson.lo: cjson.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/__sigset_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timeval.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timespec.h \
- /usr/riscv64-linux-gnu/include/bits/select2.h \
  /usr/riscv64-linux-gnu/include/bits/pthreadtypes.h \
  /usr/riscv64-linux-gnu/include/bits/thread-shared-types.h \
  /usr/riscv64-linux-gnu/include/bits/pthreadtypes-arch.h \
  /usr/riscv64-linux-gnu/include/bits/struct_mutex.h \
  /usr/riscv64-linux-gnu/include/bits/struct_rwlock.h \
  /usr/riscv64-linux-gnu/include/alloca.h \
- /usr/riscv64-linux-gnu/include/bits/stdlib-bsearch.h \
  /usr/riscv64-linux-gnu/include/bits/stdlib-float.h \
- /usr/riscv64-linux-gnu/include/bits/stdlib.h \
  /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/limits.h \
  /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/syslimits.h \
  /usr/riscv64-linux-gnu/include/limits.h \
@@ -113,10 +105,6 @@ iperf_config.h:
 
 /usr/riscv64-linux-gnu/include/strings.h:
 
-/usr/riscv64-linux-gnu/include/bits/strings_fortified.h:
-
-/usr/riscv64-linux-gnu/include/bits/string_fortified.h:
-
 /usr/riscv64-linux-gnu/include/stdio.h:
 
 /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/stdarg.h:
@@ -145,10 +133,6 @@ iperf_config.h:
 
 /usr/riscv64-linux-gnu/include/bits/sys_errlist.h:
 
-/usr/riscv64-linux-gnu/include/bits/stdio.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdio2.h:
-
 /usr/riscv64-linux-gnu/include/math.h:
 
 /usr/riscv64-linux-gnu/include/bits/math-vector.h:
@@ -168,8 +152,6 @@ iperf_config.h:
 /usr/riscv64-linux-gnu/include/bits/mathcalls-helper-functions.h:
 
 /usr/riscv64-linux-gnu/include/bits/mathcalls.h:
-
-/usr/riscv64-linux-gnu/include/bits/mathinline.h:
 
 /usr/riscv64-linux-gnu/include/stdlib.h:
 
@@ -211,8 +193,6 @@ iperf_config.h:
 
 /usr/riscv64-linux-gnu/include/bits/types/struct_timespec.h:
 
-/usr/riscv64-linux-gnu/include/bits/select2.h:
-
 /usr/riscv64-linux-gnu/include/bits/pthreadtypes.h:
 
 /usr/riscv64-linux-gnu/include/bits/thread-shared-types.h:
@@ -225,11 +205,7 @@ iperf_config.h:
 
 /usr/riscv64-linux-gnu/include/alloca.h:
 
-/usr/riscv64-linux-gnu/include/bits/stdlib-bsearch.h:
-
 /usr/riscv64-linux-gnu/include/bits/stdlib-float.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdlib.h:
 
 /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/limits.h:
 

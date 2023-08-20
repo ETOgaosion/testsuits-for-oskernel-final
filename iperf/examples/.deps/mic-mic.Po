@@ -21,8 +21,6 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_FILE.h \
  /usr/riscv64-linux-gnu/include/bits/stdio_lim.h \
  /usr/riscv64-linux-gnu/include/bits/sys_errlist.h \
- /usr/riscv64-linux-gnu/include/bits/stdio.h \
- /usr/riscv64-linux-gnu/include/bits/stdio2.h \
  /usr/riscv64-linux-gnu/include/stdlib.h \
  /usr/riscv64-linux-gnu/include/bits/waitflags.h \
  /usr/riscv64-linux-gnu/include/bits/waitstatus.h \
@@ -45,30 +43,24 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/__sigset_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timeval.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timespec.h \
- /usr/riscv64-linux-gnu/include/bits/select2.h \
  /usr/riscv64-linux-gnu/include/bits/pthreadtypes.h \
  /usr/riscv64-linux-gnu/include/bits/thread-shared-types.h \
  /usr/riscv64-linux-gnu/include/bits/pthreadtypes-arch.h \
  /usr/riscv64-linux-gnu/include/bits/struct_mutex.h \
  /usr/riscv64-linux-gnu/include/bits/struct_rwlock.h \
  /usr/riscv64-linux-gnu/include/alloca.h \
- /usr/riscv64-linux-gnu/include/bits/stdlib-bsearch.h \
  /usr/riscv64-linux-gnu/include/bits/stdlib-float.h \
- /usr/riscv64-linux-gnu/include/bits/stdlib.h \
  /usr/riscv64-linux-gnu/include/unistd.h \
  /usr/riscv64-linux-gnu/include/bits/posix_opt.h \
  /usr/riscv64-linux-gnu/include/bits/environments.h \
  /usr/riscv64-linux-gnu/include/bits/confname.h \
  /usr/riscv64-linux-gnu/include/bits/getopt_posix.h \
  /usr/riscv64-linux-gnu/include/bits/getopt_core.h \
- /usr/riscv64-linux-gnu/include/bits/unistd.h \
  /usr/riscv64-linux-gnu/include/bits/unistd_ext.h \
  /usr/riscv64-linux-gnu/include/string.h \
  /usr/riscv64-linux-gnu/include/bits/types/locale_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/__locale_t.h \
  /usr/riscv64-linux-gnu/include/strings.h \
- /usr/riscv64-linux-gnu/include/bits/strings_fortified.h \
- /usr/riscv64-linux-gnu/include/bits/string_fortified.h \
  /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/stdint.h \
  /usr/riscv64-linux-gnu/include/stdint.h \
  /usr/riscv64-linux-gnu/include/bits/wchar.h \
@@ -89,11 +81,9 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/asm/sockios.h \
  /usr/riscv64-linux-gnu/include/asm-generic/sockios.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_osockaddr.h \
- /usr/riscv64-linux-gnu/include/bits/socket2.h \
  /usr/riscv64-linux-gnu/include/sys/time.h \
  /usr/riscv64-linux-gnu/include/setjmp.h \
- /usr/riscv64-linux-gnu/include/bits/setjmp.h \
- /usr/riscv64-linux-gnu/include/bits/setjmp2.h
+ /usr/riscv64-linux-gnu/include/bits/setjmp.h
 
 /usr/riscv64-linux-gnu/include/stdc-predef.h:
 
@@ -143,10 +133,6 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 
 /usr/riscv64-linux-gnu/include/bits/sys_errlist.h:
 
-/usr/riscv64-linux-gnu/include/bits/stdio.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdio2.h:
-
 /usr/riscv64-linux-gnu/include/stdlib.h:
 
 /usr/riscv64-linux-gnu/include/bits/waitflags.h:
@@ -191,8 +177,6 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 
 /usr/riscv64-linux-gnu/include/bits/types/struct_timespec.h:
 
-/usr/riscv64-linux-gnu/include/bits/select2.h:
-
 /usr/riscv64-linux-gnu/include/bits/pthreadtypes.h:
 
 /usr/riscv64-linux-gnu/include/bits/thread-shared-types.h:
@@ -205,11 +189,7 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 
 /usr/riscv64-linux-gnu/include/alloca.h:
 
-/usr/riscv64-linux-gnu/include/bits/stdlib-bsearch.h:
-
 /usr/riscv64-linux-gnu/include/bits/stdlib-float.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdlib.h:
 
 /usr/riscv64-linux-gnu/include/unistd.h:
 
@@ -223,8 +203,6 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 
 /usr/riscv64-linux-gnu/include/bits/getopt_core.h:
 
-/usr/riscv64-linux-gnu/include/bits/unistd.h:
-
 /usr/riscv64-linux-gnu/include/bits/unistd_ext.h:
 
 /usr/riscv64-linux-gnu/include/string.h:
@@ -234,10 +212,6 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 /usr/riscv64-linux-gnu/include/bits/types/__locale_t.h:
 
 /usr/riscv64-linux-gnu/include/strings.h:
-
-/usr/riscv64-linux-gnu/include/bits/strings_fortified.h:
-
-/usr/riscv64-linux-gnu/include/bits/string_fortified.h:
 
 /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/stdint.h:
 
@@ -281,12 +255,8 @@ mic-mic.o: mic.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 
 /usr/riscv64-linux-gnu/include/bits/types/struct_osockaddr.h:
 
-/usr/riscv64-linux-gnu/include/bits/socket2.h:
-
 /usr/riscv64-linux-gnu/include/sys/time.h:
 
 /usr/riscv64-linux-gnu/include/setjmp.h:
 
 /usr/riscv64-linux-gnu/include/bits/setjmp.h:
-
-/usr/riscv64-linux-gnu/include/bits/setjmp2.h:

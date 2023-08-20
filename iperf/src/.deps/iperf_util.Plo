@@ -21,8 +21,6 @@ iperf_util.lo: iperf_util.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_FILE.h \
  /usr/riscv64-linux-gnu/include/bits/stdio_lim.h \
  /usr/riscv64-linux-gnu/include/bits/sys_errlist.h \
- /usr/riscv64-linux-gnu/include/bits/stdio.h \
- /usr/riscv64-linux-gnu/include/bits/stdio2.h \
  /usr/riscv64-linux-gnu/include/signal.h \
  /usr/riscv64-linux-gnu/include/bits/signum.h \
  /usr/riscv64-linux-gnu/include/bits/signum-generic.h \
@@ -70,25 +68,19 @@ iperf_util.lo: iperf_util.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/sys/select.h \
  /usr/riscv64-linux-gnu/include/bits/select.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timeval.h \
- /usr/riscv64-linux-gnu/include/bits/select2.h \
  /usr/riscv64-linux-gnu/include/alloca.h \
- /usr/riscv64-linux-gnu/include/bits/stdlib-bsearch.h \
  /usr/riscv64-linux-gnu/include/bits/stdlib-float.h \
- /usr/riscv64-linux-gnu/include/bits/stdlib.h \
  /usr/riscv64-linux-gnu/include/unistd.h \
  /usr/riscv64-linux-gnu/include/bits/posix_opt.h \
  /usr/riscv64-linux-gnu/include/bits/environments.h \
  /usr/riscv64-linux-gnu/include/bits/confname.h \
  /usr/riscv64-linux-gnu/include/bits/getopt_posix.h \
  /usr/riscv64-linux-gnu/include/bits/getopt_core.h \
- /usr/riscv64-linux-gnu/include/bits/unistd.h \
  /usr/riscv64-linux-gnu/include/bits/unistd_ext.h \
  /usr/riscv64-linux-gnu/include/string.h \
  /usr/riscv64-linux-gnu/include/bits/types/locale_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/__locale_t.h \
  /usr/riscv64-linux-gnu/include/strings.h \
- /usr/riscv64-linux-gnu/include/bits/strings_fortified.h \
- /usr/riscv64-linux-gnu/include/bits/string_fortified.h \
  /usr/riscv64-linux-gnu/include/sys/time.h \
  /usr/riscv64-linux-gnu/include/sys/resource.h \
  /usr/riscv64-linux-gnu/include/bits/resource.h \
@@ -108,8 +100,7 @@ iperf_util.lo: iperf_util.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/fcntl.h \
  /usr/riscv64-linux-gnu/include/bits/fcntl.h \
  /usr/riscv64-linux-gnu/include/bits/fcntl-linux.h \
- /usr/riscv64-linux-gnu/include/bits/stat.h \
- /usr/riscv64-linux-gnu/include/bits/fcntl2.h cjson.h \
+ /usr/riscv64-linux-gnu/include/bits/stat.h cjson.h \
  /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/stdint.h \
  /usr/riscv64-linux-gnu/include/stdint.h \
  /usr/riscv64-linux-gnu/include/bits/wchar.h \
@@ -130,7 +121,6 @@ iperf_util.lo: iperf_util.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/asm/sockios.h \
  /usr/riscv64-linux-gnu/include/asm-generic/sockios.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_osockaddr.h \
- /usr/riscv64-linux-gnu/include/bits/socket2.h \
  /usr/riscv64-linux-gnu/include/linux/tcp.h \
  /usr/riscv64-linux-gnu/include/linux/types.h \
  /usr/riscv64-linux-gnu/include/asm/types.h \
@@ -145,8 +135,7 @@ iperf_util.lo: iperf_util.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/net/if.h \
  /usr/riscv64-linux-gnu/include/inttypes.h timer.h iperf_time.h queue.h \
  iperf_api.h /usr/riscv64-linux-gnu/include/setjmp.h \
- /usr/riscv64-linux-gnu/include/bits/setjmp.h \
- /usr/riscv64-linux-gnu/include/bits/setjmp2.h
+ /usr/riscv64-linux-gnu/include/bits/setjmp.h
 
 /usr/riscv64-linux-gnu/include/stdc-predef.h:
 
@@ -195,10 +184,6 @@ iperf_config.h:
 /usr/riscv64-linux-gnu/include/bits/stdio_lim.h:
 
 /usr/riscv64-linux-gnu/include/bits/sys_errlist.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdio.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdio2.h:
 
 /usr/riscv64-linux-gnu/include/signal.h:
 
@@ -294,15 +279,9 @@ iperf_config.h:
 
 /usr/riscv64-linux-gnu/include/bits/types/struct_timeval.h:
 
-/usr/riscv64-linux-gnu/include/bits/select2.h:
-
 /usr/riscv64-linux-gnu/include/alloca.h:
 
-/usr/riscv64-linux-gnu/include/bits/stdlib-bsearch.h:
-
 /usr/riscv64-linux-gnu/include/bits/stdlib-float.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdlib.h:
 
 /usr/riscv64-linux-gnu/include/unistd.h:
 
@@ -316,8 +295,6 @@ iperf_config.h:
 
 /usr/riscv64-linux-gnu/include/bits/getopt_core.h:
 
-/usr/riscv64-linux-gnu/include/bits/unistd.h:
-
 /usr/riscv64-linux-gnu/include/bits/unistd_ext.h:
 
 /usr/riscv64-linux-gnu/include/string.h:
@@ -327,10 +304,6 @@ iperf_config.h:
 /usr/riscv64-linux-gnu/include/bits/types/__locale_t.h:
 
 /usr/riscv64-linux-gnu/include/strings.h:
-
-/usr/riscv64-linux-gnu/include/bits/strings_fortified.h:
-
-/usr/riscv64-linux-gnu/include/bits/string_fortified.h:
 
 /usr/riscv64-linux-gnu/include/sys/time.h:
 
@@ -371,8 +344,6 @@ iperf_config.h:
 /usr/riscv64-linux-gnu/include/bits/fcntl-linux.h:
 
 /usr/riscv64-linux-gnu/include/bits/stat.h:
-
-/usr/riscv64-linux-gnu/include/bits/fcntl2.h:
 
 cjson.h:
 
@@ -418,8 +389,6 @@ iperf.h:
 
 /usr/riscv64-linux-gnu/include/bits/types/struct_osockaddr.h:
 
-/usr/riscv64-linux-gnu/include/bits/socket2.h:
-
 /usr/riscv64-linux-gnu/include/linux/tcp.h:
 
 /usr/riscv64-linux-gnu/include/linux/types.h:
@@ -457,5 +426,3 @@ iperf_api.h:
 /usr/riscv64-linux-gnu/include/setjmp.h:
 
 /usr/riscv64-linux-gnu/include/bits/setjmp.h:
-
-/usr/riscv64-linux-gnu/include/bits/setjmp2.h:

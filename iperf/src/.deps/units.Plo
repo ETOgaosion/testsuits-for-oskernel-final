@@ -21,8 +21,6 @@ units.lo: units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_FILE.h \
  /usr/riscv64-linux-gnu/include/bits/stdio_lim.h \
  /usr/riscv64-linux-gnu/include/bits/sys_errlist.h \
- /usr/riscv64-linux-gnu/include/bits/stdio.h \
- /usr/riscv64-linux-gnu/include/bits/stdio2.h \
  /usr/riscv64-linux-gnu/include/assert.h \
  /usr/riscv64-linux-gnu/include/ctype.h \
  /usr/riscv64-linux-gnu/include/bits/endian.h \
@@ -47,7 +45,6 @@ units.lo: units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/__sigset_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timeval.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timespec.h \
- /usr/riscv64-linux-gnu/include/bits/select2.h \
  /usr/riscv64-linux-gnu/include/bits/pthreadtypes.h \
  /usr/riscv64-linux-gnu/include/bits/thread-shared-types.h \
  /usr/riscv64-linux-gnu/include/bits/pthreadtypes-arch.h \
@@ -66,7 +63,6 @@ units.lo: units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/asm/sockios.h \
  /usr/riscv64-linux-gnu/include/asm-generic/sockios.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_osockaddr.h \
- /usr/riscv64-linux-gnu/include/bits/socket2.h \
  /usr/riscv64-linux-gnu/include/sys/time.h iperf.h iperf_config.h \
  /usr/lib/gcc-cross/riscv64-linux-gnu/9/include/stdint.h \
  /usr/riscv64-linux-gnu/include/stdint.h \
@@ -137,10 +133,6 @@ units.lo: units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 
 /usr/riscv64-linux-gnu/include/bits/sys_errlist.h:
 
-/usr/riscv64-linux-gnu/include/bits/stdio.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdio2.h:
-
 /usr/riscv64-linux-gnu/include/assert.h:
 
 /usr/riscv64-linux-gnu/include/ctype.h:
@@ -189,8 +181,6 @@ units.lo: units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 
 /usr/riscv64-linux-gnu/include/bits/types/struct_timespec.h:
 
-/usr/riscv64-linux-gnu/include/bits/select2.h:
-
 /usr/riscv64-linux-gnu/include/bits/pthreadtypes.h:
 
 /usr/riscv64-linux-gnu/include/bits/thread-shared-types.h:
@@ -226,8 +216,6 @@ units.lo: units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 /usr/riscv64-linux-gnu/include/asm-generic/sockios.h:
 
 /usr/riscv64-linux-gnu/include/bits/types/struct_osockaddr.h:
-
-/usr/riscv64-linux-gnu/include/bits/socket2.h:
 
 /usr/riscv64-linux-gnu/include/sys/time.h:
 

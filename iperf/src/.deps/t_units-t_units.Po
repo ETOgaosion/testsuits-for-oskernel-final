@@ -22,15 +22,11 @@ t_units-t_units.o: t_units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_FILE.h \
  /usr/riscv64-linux-gnu/include/bits/stdio_lim.h \
  /usr/riscv64-linux-gnu/include/bits/sys_errlist.h \
- /usr/riscv64-linux-gnu/include/bits/stdio.h \
- /usr/riscv64-linux-gnu/include/bits/stdio2.h \
  /usr/riscv64-linux-gnu/include/string.h \
  /usr/riscv64-linux-gnu/include/bits/types/locale_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/__locale_t.h \
- /usr/riscv64-linux-gnu/include/strings.h \
- /usr/riscv64-linux-gnu/include/bits/strings_fortified.h \
- /usr/riscv64-linux-gnu/include/bits/string_fortified.h iperf.h \
- iperf_config.h /usr/riscv64-linux-gnu/include/sys/time.h \
+ /usr/riscv64-linux-gnu/include/strings.h iperf.h iperf_config.h \
+ /usr/riscv64-linux-gnu/include/sys/time.h \
  /usr/riscv64-linux-gnu/include/bits/types/time_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timeval.h \
  /usr/riscv64-linux-gnu/include/sys/select.h \
@@ -40,7 +36,6 @@ t_units-t_units.o: t_units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_timespec.h \
  /usr/riscv64-linux-gnu/include/bits/endian.h \
  /usr/riscv64-linux-gnu/include/bits/endianness.h \
- /usr/riscv64-linux-gnu/include/bits/select2.h \
  /usr/riscv64-linux-gnu/include/sys/types.h \
  /usr/riscv64-linux-gnu/include/bits/types/clock_t.h \
  /usr/riscv64-linux-gnu/include/bits/types/clockid_t.h \
@@ -74,7 +69,6 @@ t_units-t_units.o: t_units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
  /usr/riscv64-linux-gnu/include/asm/sockios.h \
  /usr/riscv64-linux-gnu/include/asm-generic/sockios.h \
  /usr/riscv64-linux-gnu/include/bits/types/struct_osockaddr.h \
- /usr/riscv64-linux-gnu/include/bits/socket2.h \
  /usr/riscv64-linux-gnu/include/linux/tcp.h \
  /usr/riscv64-linux-gnu/include/linux/types.h \
  /usr/riscv64-linux-gnu/include/asm/types.h \
@@ -142,10 +136,6 @@ t_units-t_units.o: t_units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 
 /usr/riscv64-linux-gnu/include/bits/sys_errlist.h:
 
-/usr/riscv64-linux-gnu/include/bits/stdio.h:
-
-/usr/riscv64-linux-gnu/include/bits/stdio2.h:
-
 /usr/riscv64-linux-gnu/include/string.h:
 
 /usr/riscv64-linux-gnu/include/bits/types/locale_t.h:
@@ -153,10 +143,6 @@ t_units-t_units.o: t_units.c /usr/riscv64-linux-gnu/include/stdc-predef.h \
 /usr/riscv64-linux-gnu/include/bits/types/__locale_t.h:
 
 /usr/riscv64-linux-gnu/include/strings.h:
-
-/usr/riscv64-linux-gnu/include/bits/strings_fortified.h:
-
-/usr/riscv64-linux-gnu/include/bits/string_fortified.h:
 
 iperf.h:
 
@@ -181,8 +167,6 @@ iperf_config.h:
 /usr/riscv64-linux-gnu/include/bits/endian.h:
 
 /usr/riscv64-linux-gnu/include/bits/endianness.h:
-
-/usr/riscv64-linux-gnu/include/bits/select2.h:
 
 /usr/riscv64-linux-gnu/include/sys/types.h:
 
@@ -249,8 +233,6 @@ iperf_config.h:
 /usr/riscv64-linux-gnu/include/asm-generic/sockios.h:
 
 /usr/riscv64-linux-gnu/include/bits/types/struct_osockaddr.h:
-
-/usr/riscv64-linux-gnu/include/bits/socket2.h:
 
 /usr/riscv64-linux-gnu/include/linux/tcp.h:
 
