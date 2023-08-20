@@ -33,3 +33,6 @@ iperf/conf*
 !iperf/config
 !iperf/configure
 !iperf/configure.ac
+
+k210/disk.img*
+k210/img.kfpkg
