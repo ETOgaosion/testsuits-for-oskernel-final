@@ -30,8 +30,11 @@ void check() {
 
         unsigned irq, cnt;
         if (sscanf(s, " %u: %u", &irq, &cnt) != 2) {
+            printf("irq: %d, cnt: %d\n", irq, cnt);
             die("parse error\n");
         }
+
+        printf("irq: %d, cnt: %d\n", irq, cnt);
 
         if (irq < p) {
             die("irq decreased\n");
