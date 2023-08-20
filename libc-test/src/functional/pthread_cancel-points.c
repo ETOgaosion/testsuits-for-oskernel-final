@@ -6,6 +6,7 @@
 #include <sys/mman.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdio.h>
 #include "test.h"
 
 #define TESTC(c, m) ( (c) || (t_error(#c " failed (%s, " m ")\n", cdescr), 0) )
@@ -131,6 +132,7 @@ int main(void)
 		void *res;
 
 		cdescr = cur_sc->descr;
+		printf("%s\n", cur_sc->descr);
 		cur_sc->prepare(cur_sc->arg);
 		seqno = 0;
 		TESTR(pthread_create(&td, 0, run_execute, 0), "creating thread to be canceled");
