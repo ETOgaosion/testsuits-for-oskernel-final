@@ -2,7 +2,7 @@
 
 all:
 	for i in 1 2 3 4; do \
-		$(CC) test.c -static -O3 -Wall -DCASE=$$i -o copy-file-range-test-$$i; \
+		$(CC) test.c -static -O -g -Wall -DCASE=$$i -o copy-file-range-test-$$i; \
 	done
 
 clean:

@@ -2,7 +2,7 @@
 
 all:
 	for i in 1 2; do \
-		$(CC) test$$i.c -static -O3 -Wall -o interrupts-test-$$i; \
+		$(CC) test$$i.c -static -O -g -Wall -o interrupts-test-$$i; \
 	done
 
 clean:
