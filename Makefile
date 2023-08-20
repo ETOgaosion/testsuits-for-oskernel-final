@@ -20,15 +20,9 @@ lua: .PHONY
 lmbench: .PHONY
 	make -C lmbench build CC="riscv64-linux-gnu-gcc -static -g" OS=riscv64 -j $(NPROC)
 	cp lmbench/bin/riscv64/lmbench_all sdcard/
-<<<<<<< HEAD
-<<<<<<< HEAD
 	cp lmbench/bin/riscv64/hello sdcard/
-=======
 	cp lmbench/bin/riscv64/hello sd
->>>>>>> bed6afa (update)
-=======
 	cp lmbench/bin/riscv64/hello sdcard/
->>>>>>> 11a8d79 (update Makefile)
 	cp scripts/lmbench/* sdcard/
 
 libctest: .PHONY
@@ -46,11 +40,7 @@ libc-bench: .PHONY
 	cp libc-bench/libc-bench sdcard/libc-bench
 
 unix-bench: .PHONY
-<<<<<<< HEAD
-	make -C UnixBench -j $(NPROC) all
-=======
 	make -C UnixBench CC="riscv64-linux-gnu-gcc" ARCH=riscv64 -j $(NPROC) all
->>>>>>> bed6afa (update)
 	cp UnixBench/pgms/* sdcard
 	cp scripts/unixbench/*.sh sdcard
 	cp scripts/unixbench/sort.src sdcard
@@ -67,14 +57,11 @@ iperf: .PHONY
 	cp iperf/src/iperf3 sdcard/
 	cp scripts/iperf/iperf_testcode.sh sdcard/
 
-<<<<<<< HEAD
 cyclictest: .PHONY
 	make -C rt-tests cyclictest hackbench
 	cp rt-tests/cyclictest rt-tests/hackbench sdcard/
 	cp scripts/cyclictest/cyclictest_testcode.sh sdcard/
 
-=======
->>>>>>> 984613c (add iperf testcode)
 time-test: .PHONY
 	make CC="$(MUSL_GCC) -g" -C time-test all
 	cp time-test/time-test sdcard
@@ -131,13 +118,10 @@ clean: .PHONY
 	make -C iperf clean
 	make -C UnixBench clean
 	make -C time-test clean
-<<<<<<< HEAD
 	make -C rt-tests clean
 	make -C copy-file-range-test clean
 	make -C interrupts-test clean
 	make -C UnixBench clean
-=======
->>>>>>> 11a8d79 (update Makefile)
 	- rm sdcard/*
 	- rm sdcard.img
 	- rm sdcard.img.gz
