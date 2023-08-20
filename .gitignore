@@ -1,4 +1,5 @@
 *.o
+..bfg-report
 sdcard/*
 sdcard.img
 sdcard.img.gz
@@ -28,4 +29,7 @@ netperf/doc/netperf.info
 
 k210/disk.img*
 k210/img.kfpkg
->>>>>>> ad3c4bb (update gitignore and README)
+iperf/conf*
+!iperf/config
+!iperf/configure
+!iperf/configure.ac
