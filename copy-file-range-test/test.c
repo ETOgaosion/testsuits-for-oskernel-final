@@ -225,6 +225,7 @@ static void simple_file_copy(void) {
   TEST_COMPARE(read(outfd, bytes, st.st_size), st.st_size);
   for (int i = 0; i < out_skipped; ++i)
     TEST_COMPARE(bytes[i], 0);
+  printf("out_skipped: %d, in_skipped: %d, length: %d\n", out_skipped, in_skipped, length);
   TEST_VERIFY(memcmp(bytes + out_skipped, random_data + in_skipped, length) ==
               0);
   free(bytes);
